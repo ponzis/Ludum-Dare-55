@@ -6,13 +6,13 @@
 [node name="Room3" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(575, 229)
-scale = Vector2(2, 2)
+position = Vector2(705, 526)
+scale = Vector2(2.30667, 2.27074)
 texture = ExtResource("1_sa3bq")
 
 [node name="Glorbo" parent="." instance=ExtResource("2_ssl0a")]
-offset_left = -26.0
-offset_top = -222.0
-offset_right = 1174.0
-offset_bottom = 978.0
+offset_left = 31.0
+offset_top = 175.0
+offset_right = 1231.0
+offset_bottom = 1375.0
 scale = Vector2(0.330817, 0.690826)
