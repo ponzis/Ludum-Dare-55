@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bwt04pbe02yvc"]
 
-[ext_resource type="Texture2D" uid="uid://c5vsf2lv7fbu5" path="res://textures/test2.png" id="1_rxhgl"]
+[ext_resource type="Texture2D" uid="uid://c5vsf2lv7fbu5" path="res://Rooms/Room4/test2.png" id="1_rxhgl"]
 
 [node name="scene_01" type="Node2D"]
 scale = Vector2(6, 6)

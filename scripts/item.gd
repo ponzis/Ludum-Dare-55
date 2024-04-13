@@ -1,11 +1,10 @@
 extends Node
 
+# We get a reference to game manager to handle persistent events
+@onready var game_manager = get_node('/root/Main')
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	var text = get_node('.').get_texture_normal()
-	var height = text.get_height()
-	var width = text.get_width()
 	pass # Replace with function  body.
 
 

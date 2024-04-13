@@ -1,33 +1,44 @@
-[gd_scene load_steps=8 format=3 uid="uid://ug4plaxep8f1"]
+[gd_scene load_steps=7 format=3 uid="uid://ug4plaxep8f1"]
 
-[ext_resource type="Texture2D" uid="uid://dyu1neqlp1fnp" path="res://icon.svg" id="1_8su4f"]
 [ext_resource type="Script" path="res://scripts/item.gd" id="1_avgdo"]
 [ext_resource type="Script" path="res://scripts/gamemanager.gd" id="1_m0qrl"]
-[ext_resource type="PackedScene" uid="uid://dqiyhtbex5bfs" path="res://Room1/Room1.tscn" id="3_bsafd"]
-[ext_resource type="PackedScene" uid="uid://bwt04pbe02yvc" path="res://scene/scene_01.tscn" id="4_r3k27"]
-[ext_resource type="PackedScene" uid="uid://cpe460ngmlu2y" path="res://Room2/Room2.tscn" id="4_wt6he"]
-[ext_resource type="PackedScene" uid="uid://c5cy8plttdff3" path="res://Room3/Room3.tscn" id="5_21fij"]
+[ext_resource type="PackedScene" uid="uid://dqiyhtbex5bfs" path="res://Rooms/Room1/Room1.tscn" id="3_bsafd"]
+[ext_resource type="PackedScene" uid="uid://bwt04pbe02yvc" path="res://Rooms/Room4/Room4.tscn" id="4_r3k27"]
+[ext_resource type="PackedScene" uid="uid://cpe460ngmlu2y" path="res://Rooms/Room2/Room2.tscn" id="4_wt6he"]
+[ext_resource type="PackedScene" uid="uid://c5cy8plttdff3" path="res://Rooms/Room3/Room3.tscn" id="5_21fij"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_m0qrl")
 
-[node name="Room2" parent="." instance=ExtResource("4_wt6he")]
-
-[node name="TextureButton" type="TextureButton" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
-texture_normal = ExtResource("1_8su4f")
+[node name="rooms" type="Node" parent="."]
 script = ExtResource("1_avgdo")
-metadata/_edit_use_anchors_ = true
 
-[node name="origin" type="Node2D" parent="."]
-position = Vector2(678, 510)
-scale = Vector2(6, 6)
+[node name="Room1" parent="rooms" instance=ExtResource("3_bsafd")]
+visible = false
+position = Vector2(1, 0)
 
-[node name="scene_01" parent="origin" instance=ExtResource("4_r3k27")]
-scale = Vector2(1, 1)
+[node name="Room2" parent="rooms" instance=ExtResource("4_wt6he")]
+visible = false
 
-[node name="Room1" parent="." instance=ExtResource("3_bsafd")]
+[node name="Room3" parent="rooms" instance=ExtResource("5_21fij")]
+position = Vector2(1, 0)
 
-[node name="Room3" parent="." instance=ExtResource("5_21fij")]
-position = Vector2(-8, -9)
+[node name="Room4" parent="rooms" instance=ExtResource("4_r3k27")]
+visible = false
+position = Vector2(677, 511)
+
+[node name="ui" type="Node" parent="."]
+
+[node name="Label" type="Label" parent="ui"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -93.0
+offset_top = -111.0
+offset_right = 94.0
+offset_bottom = -88.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "You have some time left"

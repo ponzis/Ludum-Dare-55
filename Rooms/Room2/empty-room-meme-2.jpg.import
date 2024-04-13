@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://v1ft33niyxka"
-path="res://.godot/imported/Glorbomouse.png-b4556dbc38a6f1cfb641789334c69229.ctex"
+uid="uid://ck3vgcdp6csjy"
+path="res://.godot/imported/empty-room-meme-2.jpg-7a00d93bdbf2973934a0b9d726332c45.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Room1/glorbo/Glorbomouse.png"
-dest_files=["res://.godot/imported/Glorbomouse.png-b4556dbc38a6f1cfb641789334c69229.ctex"]
+source_file="res://Rooms/Room2/empty-room-meme-2.jpg"
+dest_files=["res://.godot/imported/empty-room-meme-2.jpg-7a00d93bdbf2973934a0b9d726332c45.ctex"]
 
 [params]
 

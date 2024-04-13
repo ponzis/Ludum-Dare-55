@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cpe460ngmlu2y"]
 
-[ext_resource type="Texture2D" uid="uid://ck3vgcdp6csjy" path="res://Room2/empty-room-meme-2.jpg" id="1_sca1w"]
+[ext_resource type="Texture2D" uid="uid://ck3vgcdp6csjy" path="res://Rooms/Room2/empty-room-meme-2.jpg" id="1_sca1w"]
 
 [node name="Room2" type="Node2D"]
 

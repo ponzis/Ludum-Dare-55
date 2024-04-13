@@ -1,16 +1,16 @@
 [gd_scene load_steps=3 format=3 uid="uid://c5cy8plttdff3"]
 
-[ext_resource type="Texture2D" uid="uid://by5m62m2q5h0" path="res://Room3/empty-room-just.jpg" id="1_sa3bq"]
-[ext_resource type="PackedScene" uid="uid://cilnwck2heu2a" path="res://Room1/glorbo/glorbo.tscn" id="2_ssl0a"]
+[ext_resource type="Texture2D" uid="uid://by5m62m2q5h0" path="res://Rooms/Room3/empty-room-just.jpg" id="1_sa3bq"]
+[ext_resource type="PackedScene" uid="uid://cilnwck2heu2a" path="res://Rooms/Room3/glorbo/glorbo.tscn" id="2_ygy20"]
 
 [node name="Room3" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(705, 526)
+position = Vector2(692, 520)
 scale = Vector2(2.30667, 2.27074)
 texture = ExtResource("1_sa3bq")
 
-[node name="Glorbo" parent="." instance=ExtResource("2_ssl0a")]
+[node name="Glorbo" parent="." instance=ExtResource("2_ygy20")]
 offset_left = 31.0
 offset_top = 175.0
 offset_right = 1231.0

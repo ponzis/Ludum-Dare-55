@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://by5m62m2q5h0"
-path="res://.godot/imported/empty-room-just.jpg-d47ed67598bd0ef2618f264ec047dbc6.ctex"
+uid="uid://d11p11wn1kaoe"
+path="res://.godot/imported/Empty-Room-meme-9.jpg-a8077412d6ce5f920c3391190972032e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Room3/empty-room-just.jpg"
-dest_files=["res://.godot/imported/empty-room-just.jpg-d47ed67598bd0ef2618f264ec047dbc6.ctex"]
+source_file="res://Rooms/Room1/Empty-Room-meme-9.jpg"
+dest_files=["res://.godot/imported/Empty-Room-meme-9.jpg-a8077412d6ce5f920c3391190972032e.ctex"]
 
 [params]
 
