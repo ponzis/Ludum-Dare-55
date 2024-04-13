@@ -3,6 +3,10 @@ extends Node
 # this is a place to store all the game flags
 var game_flags = {} 
 
+# this stores action counter
+var action_counter = 0
+
+
 ###flags
 ### TALK_TO_GLORBO
 

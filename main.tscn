@@ -14,17 +14,14 @@ script = ExtResource("1_m0qrl")
 script = ExtResource("1_avgdo")
 
 [node name="Room1" parent="rooms" instance=ExtResource("3_bsafd")]
-visible = false
 position = Vector2(1, 0)
 
 [node name="Room2" parent="rooms" instance=ExtResource("4_wt6he")]
-visible = false
 
 [node name="Room3" parent="rooms" instance=ExtResource("5_21fij")]
 position = Vector2(1, 0)
 
 [node name="Room4" parent="rooms" instance=ExtResource("4_r3k27")]
-visible = false
 position = Vector2(677, 511)
 
 [node name="ui" type="Node" parent="."]
