@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://ug4plaxep8f1"]
+
+[ext_resource type="Texture2D" uid="uid://dyu1neqlp1fnp" path="res://icon.svg" id="1_8su4f"]
+[ext_resource type="Script" path="res://scripts/item.gd" id="1_avgdo"]
+
+[node name="Main" type="Node2D"]
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture_normal = ExtResource("1_8su4f")
+script = ExtResource("1_avgdo")
