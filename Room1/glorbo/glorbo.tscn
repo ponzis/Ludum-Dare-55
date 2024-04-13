@@ -1,0 +1,15 @@
+[gd_scene load_steps=5 format=3 uid="uid://cilnwck2heu2a"]
+
+[ext_resource type="Texture2D" uid="uid://m3ct3dgcmhoq" path="res://Room1/glorbo/glorbo1.png" id="1_rk6mf"]
+[ext_resource type="Texture2D" uid="uid://dur5l833s2jvf" path="res://Room1/glorbo/Glorbo2.png" id="2_m5ubj"]
+[ext_resource type="Texture2D" uid="uid://v1ft33niyxka" path="res://Room1/glorbo/Glorbomouse.png" id="3_83bqo"]
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_ak5h2"]
+frames = 2
+frame_0/texture = ExtResource("1_rk6mf")
+frame_1/texture = ExtResource("2_m5ubj")
+frame_1/duration = 1.0
+
+[node name="Glorbo" type="TextureButton"]
+texture_normal = SubResource("AnimatedTexture_ak5h2")
+texture_hover = ExtResource("3_83bqo")
