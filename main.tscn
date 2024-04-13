@@ -1,12 +1,15 @@
-[gd_scene load_steps=6 format=3 uid="uid://ug4plaxep8f1"]
+[gd_scene load_steps=5 format=3 uid="uid://ug4plaxep8f1"]
 
 [ext_resource type="Texture2D" uid="uid://dyu1neqlp1fnp" path="res://icon.svg" id="1_8su4f"]
 [ext_resource type="Script" path="res://scripts/item.gd" id="1_avgdo"]
+[ext_resource type="Script" path="res://scripts/gamemanager.gd" id="1_m0qrl"]
 [ext_resource type="PackedScene" uid="uid://dqiyhtbex5bfs" path="res://Room1/Room1.tscn" id="3_bsafd"]
 [ext_resource type="PackedScene" uid="uid://cpe460ngmlu2y" path="res://Room2/Room2.tscn" id="4_wt6he"]
 [ext_resource type="PackedScene" uid="uid://c5cy8plttdff3" path="res://Room3/Room3.tscn" id="5_21fij"]
+[ext_resource type="PackedScene" uid="uid://bwt04pbe02yvc" path="res://scene/scene_01.tscn" id="4_r3k27"]
 
 [node name="Main" type="Node2D"]
+script = ExtResource("1_m0qrl")
 
 [node name="Room3" parent="." instance=ExtResource("5_21fij")]
 
@@ -19,3 +22,11 @@ offset_right = 40.0
 offset_bottom = 40.0
 texture_normal = ExtResource("1_8su4f")
 script = ExtResource("1_avgdo")
+metadata/_edit_use_anchors_ = true
+
+[node name="origin" type="Node2D" parent="."]
+position = Vector2(678, 510)
+scale = Vector2(6, 6)
+
+[node name="scene_01" parent="origin" instance=ExtResource("4_r3k27")]
+scale = Vector2(1, 1)
