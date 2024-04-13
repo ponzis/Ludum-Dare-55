@@ -18,5 +18,5 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	print(game_flags)
+	#print(game_flags)
 	pass
