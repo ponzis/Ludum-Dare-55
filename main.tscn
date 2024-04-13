@@ -1,9 +1,18 @@
-[gd_scene load_steps=3 format=3 uid="uid://ug4plaxep8f1"]
+[gd_scene load_steps=6 format=3 uid="uid://ug4plaxep8f1"]
 
 [ext_resource type="Texture2D" uid="uid://dyu1neqlp1fnp" path="res://icon.svg" id="1_8su4f"]
 [ext_resource type="Script" path="res://scripts/item.gd" id="1_avgdo"]
+[ext_resource type="PackedScene" uid="uid://dqiyhtbex5bfs" path="res://Room1/Room1.tscn" id="3_bsafd"]
+[ext_resource type="PackedScene" uid="uid://cpe460ngmlu2y" path="res://Room2/Room2.tscn" id="4_wt6he"]
+[ext_resource type="PackedScene" uid="uid://c5cy8plttdff3" path="res://Room3/Room3.tscn" id="5_21fij"]
 
 [node name="Main" type="Node2D"]
+
+[node name="Room3" parent="." instance=ExtResource("5_21fij")]
+
+[node name="Room2" parent="." instance=ExtResource("4_wt6he")]
+
+[node name="Room1" parent="." instance=ExtResource("3_bsafd")]
 
 [node name="TextureButton" type="TextureButton" parent="."]
 offset_right = 40.0

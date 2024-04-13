@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dqiyhtbex5bfs"]
+
+[ext_resource type="Texture2D" uid="uid://d11p11wn1kaoe" path="res://Room1/Empty-Room-meme-9.jpg" id="1_f0uhu"]
+
+[node name="Room1" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(619, 466)
+scale = Vector2(2, 2)
+texture = ExtResource("1_f0uhu")
