@@ -13,6 +13,7 @@ func _ready():
 	print("Item %s ready" % self.name)
 	Input.set_custom_mouse_cursor(crosshair)
 	make_clip_mask()
+	pass
 
 func make_clip_mask():
 	if self.texture_normal == null:
@@ -31,8 +32,10 @@ func _process(delta):
 func _on_mouse_entered():
 	print("Enter")
 	Input.set_custom_mouse_cursor(grab)
+	pass
 	
 
 func _on_mouse_exited():
 	print("Exited")
 	Input.set_custom_mouse_cursor(crosshair)
+	pass

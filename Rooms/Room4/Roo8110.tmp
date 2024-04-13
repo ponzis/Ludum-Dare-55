@@ -26,7 +26,9 @@ offset_right = 62.0
 offset_bottom = 32.0
 script = ExtResource("3_u034m")
 peron_name = "Dr. Munchi"
-dialog_file = "res://Rooms/Room4/headmaster.json"
+dialog_file = "res://Rooms/Room4/headmaster.xml"
+crosshair = null
+grab = null
 
 [connection signal="mouse_entered" from="Background/Folder" to="Background/Folder" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Background/Folder" to="Background/Folder" method="_on_mouse_exited"]
