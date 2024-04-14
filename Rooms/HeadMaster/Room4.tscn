@@ -35,6 +35,9 @@ offset_right = 44.5
 offset_bottom = 68.3333
 scale = Vector2(0.374598, 0.507877)
 script = ExtResource("4_yd0rg")
+visibility_flags = {
+"REEEEEEEEEEEEEEEEEEEEEEEEEEEEE": true
+}
 
 [connection signal="mouse_entered" from="Background/Folder" to="Background/Folder" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Background/Folder" to="Background/Folder" method="_on_mouse_exited"]

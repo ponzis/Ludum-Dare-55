@@ -9,14 +9,24 @@ extends TextureButton
 @export var visibility_flags:= {}
 
 
-func check_conditions(flags:Dictionary,ignore_missing = true):
+func check_conditions(flags:Dictionary,ignore_missing = true, return_if_met = true):
 	if flags.is_empty() and ignore_missing:
 		print("No flags set.")
-		return
+		return return_if_met
 	else:
 		for flag in flags.keys():
-			print(flag)
-			print(game_manager.game_flags[flag])
+			if game_manager.game_flags.has(flag):
+				if game_manager.game_flags[flag] == flags[flag]:
+					pass
+				else:
+					#Fail condition
+					return not return_if_met
+			else:
+				if ignore_missing:
+					pass #Skip if ignoring missing
+				else:
+					return not return_if_met #Else, autofail
+	return return_if_met #since we got through the ladder we are confirmed.
 
 
 
@@ -27,7 +37,8 @@ var clickmask: BitMap = BitMap.new()
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	print("Item %s ready" % self.name)
-	check_conditions(visibility_flags)
+	if check_conditions(visibility_flags):
+		print("Item should be visible!")
 	Input.set_custom_mouse_cursor(crosshair)
 	make_clip_mask()
 	pass
