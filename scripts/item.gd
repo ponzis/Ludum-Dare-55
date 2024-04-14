@@ -35,8 +35,6 @@ func set_flags(flags:Dictionary):
 		game_manager.game_flags[flag]=flags[flag]
 
 
-
-
 var clickmask: BitMap = BitMap.new()
 
 # Called when the node enters the scene tree for the first time.
@@ -70,10 +68,8 @@ func _process(delta):
 func _on_mouse_entered():
 	print("Enter")
 	Input.set_custom_mouse_cursor(grab)
-	pass
 	
 
 func _on_mouse_exited():
 	print("Exited")
 	Input.set_custom_mouse_cursor(crosshair)
-	pass

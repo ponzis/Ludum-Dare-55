@@ -10,6 +10,7 @@ var state = {}
 #var dialogue = {}
 
 func _ready():
+	super()
 	pass
 
 func _on_dialogue_clicked(option):
@@ -24,11 +25,9 @@ func get_dialogue() -> Dictionary:
 
 func set_state(new_state):
 	state = new_state
-	pass
 
 func set_dialogue(new_dialogue):
 	dialogue = new_dialogue
-	pass
 
 func check_codnition(conditon):
 	if conditon is String:
