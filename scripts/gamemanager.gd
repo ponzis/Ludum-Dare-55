@@ -1,5 +1,9 @@
 extends Node
 
+@export var debug: bool
+
+
+
 # this is a place to store all the game flags
 var game_flags = {}
 func set_game_flag(key, value):
@@ -35,10 +39,15 @@ func time_elapsed(cost: int):
 ###flags
 ### TALK_TO_GLORBO
 
-
+func show_debug():
+	var debug_lable = get_node_or_null("ui/Clock")
+	if debug_lable != null:
+		debug_lable.show()
+		
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	if debug:
+		show_debug()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

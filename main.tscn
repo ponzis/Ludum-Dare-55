@@ -14,6 +14,7 @@
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_m0qrl")
+debug = true
 metadata/_edit_horizontal_guides_ = [20.0]
 
 [node name="rooms" type="Node" parent="."]
@@ -110,6 +111,7 @@ flat = true
 alignment = 0
 
 [node name="Clock" type="Label" parent="ui"]
+visible = false
 offset_right = 40.0
 offset_bottom = 23.0
 theme = ExtResource("6_3vbfu")
