@@ -6,7 +6,7 @@ extends TextureButton
 @onready var room_manager = get_node('/root/Main/rooms')
 
 @export var crosshair:Resource = preload("res://crosshair_24.svg")
-@export var grab:Resource = preload("res://grab_24.svg")
+@export var grab:Resource = preload("res://InspectCursor.svg")
 
 @export_range(0, 100) var action_cost: int = 5
 
