@@ -1,20 +1,46 @@
 {
-	"name":"DR. GAY",
-	"tree":[{
-		"condition": "",
-		"text": "Will you love me?",
-		"response": [
-			{"text": "No",
-				"effect": {
-					"key": "MAKE_GAY_MAD",
-					"value": true
+	"name": "DR. GAY",
+	"tree": [
+		{
+			"condition": "",
+			"text": "Will you love me?",
+			"response": [
+				{
+					"text": "No",
+					"effect": {
+						"key": "MAKE_GAY_MAD",
+						"value": true
+					}
+				},
+				{
+					"text": "Yes",
+					"effect": {
+						"key": "MAKE_GAY_HAPPY",
+						"value": true
+					},
+					"tree": [
+						{
+							"text": "Really?",
+							"response": [
+								{
+									"text": "No",
+									"effect": {
+										"key": "MAKE_GAY_MAD",
+										"value": true
+									}
+								},
+								{
+									"text": "Yes",
+									"effect": {
+										"key": "MAKE_GAY_HAPPY",
+										"value": true
+									}
+								}
+							]
+						}
+					]
 				}
-			},
-			{"text": "Yes",
-			"effect": {
-				"key": "MAKE_GAY_HAPPY",
-				"value": true
-			}}
-		]
-	}]
+			]
+		}
+	]
 }
