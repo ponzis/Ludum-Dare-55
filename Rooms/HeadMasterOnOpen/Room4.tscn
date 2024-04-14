@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://bwt04pbe02yvc"]
+[gd_scene load_steps=9 format=3 uid="uid://bwt04pbe02yvc"]
 
 [ext_resource type="Texture2D" uid="uid://c5vsf2lv7fbu5" path="res://Rooms/HeadMasterOnOpen/test2.png" id="1_ikq6l"]
 [ext_resource type="Script" path="res://scripts/move_action.gd" id="2_7o15o"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://b1ve1eegt26a1" path="res://crosshair_24.svg" id="5_px7oh"]
 [ext_resource type="Texture2D" uid="uid://dyu1neqlp1fnp" path="res://icon.svg" id="6_21bho"]
 [ext_resource type="Script" path="res://scripts/pickup_item.gd" id="7_o3wb4"]
+[ext_resource type="Texture2D" uid="uid://cifef12mqi0kw" path="res://BackOutbutton.png" id="8_lo3r7"]
 
 [node name="Room4" type="Node2D"]
 position = Vector2(681, 514)
@@ -21,8 +22,6 @@ offset_left = -87.0
 offset_top = 48.0
 offset_right = -11.0
 offset_bottom = 77.0
-script = ExtResource("2_7o15o")
-next_room_id = 3
 
 [node name="Headmaster" type="TextureButton" parent="Background"]
 offset_left = -2.0
@@ -58,6 +57,16 @@ set_flags_on_pickup = {
 visibility_flags = {
 "CAN_SEE_GODOT": true
 }
+
+[node name="BackOutofRoom" type="TextureButton" parent="Background"]
+offset_left = 13.5
+offset_top = 38.1667
+offset_right = 213.5
+offset_bottom = 238.167
+scale = Vector2(0.2, 0.2)
+texture_normal = ExtResource("8_lo3r7")
+script = ExtResource("2_7o15o")
+next_room_id = 3
 
 [connection signal="mouse_entered" from="Background/Folder" to="Background/Folder" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Background/Folder" to="Background/Folder" method="_on_mouse_exited"]

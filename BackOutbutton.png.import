@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://chnk6c33j5ypf"
-path="res://.godot/imported/5310_3970.png-c0d53f76001c6fcb50253ac7e9c520b0.ctex"
+uid="uid://cifef12mqi0kw"
+path="res://.godot/imported/BackOutbutton.png-8b5de0a87a2b4cb94b79a424e9ef838c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Rooms/HallwayPrincipal/5310_3970.png"
-dest_files=["res://.godot/imported/5310_3970.png-c0d53f76001c6fcb50253ac7e9c520b0.ctex"]
+source_file="res://BackOutbutton.png"
+dest_files=["res://.godot/imported/BackOutbutton.png-8b5de0a87a2b4cb94b79a424e9ef838c.ctex"]
 
 [params]
 

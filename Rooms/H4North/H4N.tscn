@@ -9,3 +9,11 @@ z_index = -1
 position = Vector2(720, 540)
 texture = ExtResource("1_4w6pb")
 flip_h = true
+
+[node name="BackToPrincipalDoor" type="TextureButton" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureButton2" type="TextureButton" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
