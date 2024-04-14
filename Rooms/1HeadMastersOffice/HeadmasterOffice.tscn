@@ -1,6 +1,12 @@
-[gd_scene load_steps=2 format=3 uid="uid://dxfdscm00qxcq"]
+[gd_scene load_steps=8 format=3 uid="uid://dxfdscm00qxcq"]
 
 [ext_resource type="Texture2D" uid="uid://cj660y3st6xef" path="res://Rooms/1HeadMastersOffice/DSC_0630cropped.png" id="1_36poa"]
+[ext_resource type="Script" path="res://scripts/dialog_action.gd" id="2_2da6a"]
+[ext_resource type="Texture2D" uid="uid://8mvjydx67dm2" path="res://SpeakCursor.svg" id="3_c153e"]
+[ext_resource type="Script" path="res://scripts/move_action.gd" id="4_wk8d3"]
+[ext_resource type="Texture2D" uid="uid://uarkxd6dxkd5" path="res://InspectCursor.svg" id="5_w1bry"]
+[ext_resource type="Texture2D" uid="uid://cifef12mqi0kw" path="res://Rooms/HeadMaster/BackOutbutton.png" id="6_5eki6"]
+[ext_resource type="Texture2D" uid="uid://bx7mnllvyfval" path="res://Exit.svg" id="7_by7vq"]
 
 [node name="HeadmasterOffice" type="Node2D"]
 
@@ -8,3 +14,29 @@
 z_index = -1
 position = Vector2(720, 540)
 texture = ExtResource("1_36poa")
+
+[node name="Headmaster" type="TextureButton" parent="."]
+offset_left = 400.0
+offset_top = 366.0
+offset_right = 927.0
+offset_bottom = 890.0
+script = ExtResource("2_2da6a")
+dialog_file = "res://Rooms/HeadMaster/headmaster.json"
+grab = ExtResource("3_c153e")
+
+[node name="Folder" type="TextureButton" parent="."]
+offset_left = 583.0
+offset_top = 961.0
+offset_right = 879.0
+offset_bottom = 1015.0
+script = ExtResource("4_wk8d3")
+grab = ExtResource("5_w1bry")
+
+[node name="NextRoom" type="TextureButton" parent="."]
+offset_left = 579.0
+offset_top = 121.0
+offset_right = 779.0
+offset_bottom = 321.0
+texture_normal = ExtResource("6_5eki6")
+script = ExtResource("4_wk8d3")
+grab = ExtResource("7_by7vq")
