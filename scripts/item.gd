@@ -10,9 +10,13 @@ extends TextureButton
 
 
 func check_conditions(flags:Dictionary,ignore_missing = true):
-	for flag in flags.keys():
-		print(game_manager.game_flags[flag])
-
+	if flags.is_empty() and ignore_missing:
+		print("No flags set.")
+		return
+	else:
+		for flag in flags.keys():
+			print(flag)
+			print(game_manager.game_flags[flag])
 
 
 
