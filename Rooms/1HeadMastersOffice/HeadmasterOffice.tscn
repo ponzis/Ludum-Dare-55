@@ -1,6 +1,10 @@
-[gd_scene format=3 uid="uid://dxfdscm00qxcq"]
+[gd_scene load_steps=2 format=3 uid="uid://dxfdscm00qxcq"]
+
+[ext_resource type="Texture2D" uid="uid://cj660y3st6xef" path="res://Rooms/1HeadMastersOffice/DSC_0630cropped.png" id="1_36poa"]
 
 [node name="HeadmasterOffice" type="Node2D"]
 
 [node name="BG" type="Sprite2D" parent="."]
 z_index = -1
+position = Vector2(720, 540)
+texture = ExtResource("1_36poa")

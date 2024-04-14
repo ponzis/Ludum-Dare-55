@@ -1,6 +1,10 @@
-[gd_scene format=3 uid="uid://y73op4q28ody"]
+[gd_scene load_steps=2 format=3 uid="uid://y73op4q28ody"]
+
+[ext_resource type="Texture2D" uid="uid://bd1cc4xtivne0" path="res://Rooms/7EndingScene/DSC_0710crpoppity.png" id="1_3nsbs"]
 
 [node name="Science" type="Node2D"]
 
 [node name="BG" type="Sprite2D" parent="."]
 z_index = -1
+position = Vector2(720, 540)
+texture = ExtResource("1_3nsbs")

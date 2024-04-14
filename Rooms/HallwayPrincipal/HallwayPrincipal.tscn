@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://xbk0l01uxxit"]
+
+[ext_resource type="Texture2D" uid="uid://chnk6c33j5ypf" path="res://Rooms/HallwayPrincipal/5310_3970.png" id="1_ne0nn"]
+
+[node name="HallwayPrincipal" type="Node2D"]
+
+[node name="BG" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(718, 542)
+texture = ExtResource("1_ne0nn")
