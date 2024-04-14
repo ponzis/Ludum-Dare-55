@@ -1,0 +1,38 @@
+[gd_scene load_steps=7 format=3 uid="uid://wknqnj1w74v5"]
+
+[ext_resource type="Texture2D" uid="uid://bl5pjhjftm6bx" path="res://Rooms/00PauseMenu/quitbutton.png" id="1_kggql"]
+[ext_resource type="Script" path="res://Rooms/00PauseMenu/QuitButton.gd" id="2_r6t31"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t1asm"]
+atlas = ExtResource("1_kggql")
+region = Rect2(0, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m2s0p"]
+atlas = ExtResource("1_kggql")
+region = Rect2(200, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ixq0a"]
+atlas = ExtResource("1_kggql")
+region = Rect2(400, 0, 200, 200)
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_xcicm"]
+frames = 3
+frame_0/texture = SubResource("AtlasTexture_t1asm")
+frame_1/texture = SubResource("AtlasTexture_m2s0p")
+frame_1/duration = 1.0
+frame_2/texture = SubResource("AtlasTexture_ixq0a")
+frame_2/duration = 1.0
+
+[node name="QuitButton" type="TextureButton"]
+offset_left = 283.0
+offset_top = 283.0
+offset_right = 464.0
+offset_bottom = 515.0
+texture_normal = SubResource("AnimatedTexture_xcicm")
+script = ExtResource("2_r6t31")
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+z_index = -1
+position = Vector2(41, -125)
+polygon = PackedVector2Array(-187, 227, 50, 121, 228, 222, 133, 357)
+metadata/_edit_lock_ = true

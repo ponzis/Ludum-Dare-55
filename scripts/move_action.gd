@@ -3,7 +3,9 @@ extends "res://scripts/item.gd"
 @export var next_room_id: int
 
 #@onready var room_manager = get_node('/root/Main/rooms')
-
+func _ready():
+	super()
+	pressed.connect(_on_pressed)
 
 func _on_pressed():
 	game_manager.time_elapsed(action_cost)

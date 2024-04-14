@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://c5cy8plttdff3"]
+[gd_scene load_steps=7 format=3 uid="uid://c5cy8plttdff3"]
 
 [ext_resource type="Texture2D" uid="uid://by5m62m2q5h0" path="res://Rooms/Room3/empty-room-just.jpg" id="1_sa3bq"]
 [ext_resource type="PackedScene" uid="uid://cilnwck2heu2a" path="res://Rooms/Room3/glorbo/glorbo.tscn" id="2_ygy20"]
 [ext_resource type="Script" path="res://scripts/dialog_action.gd" id="3_o146b"]
 [ext_resource type="Texture2D" uid="uid://b1ve1eegt26a1" path="res://crosshair_24.svg" id="4_4kqgp"]
 [ext_resource type="Texture2D" uid="uid://erj7fart7jky" path="res://grab_24.svg" id="5_cbwt2"]
+[ext_resource type="Script" path="res://scripts/move_action.gd" id="6_23vv8"]
 
 [node name="Room3" type="Node2D"]
 
@@ -27,3 +28,13 @@ visibility_flags = {
 "CAN_SEE_GLORBO": true
 }
 visible_without_flag = false
+action_cost = 5
+
+[node name="MoveRoom" type="TextureButton" parent="."]
+offset_left = 791.0
+offset_top = 343.0
+offset_right = 831.0
+offset_bottom = 383.0
+texture_normal = ExtResource("5_cbwt2")
+script = ExtResource("6_23vv8")
+next_room_id = 4

@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cpp614x7ayuh1"]
+
+[node name="Science" type="Node2D"]
+
+[node name="BG" type="Sprite2D" parent="."]
+z_index = -1
