@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://0a2500co5yov"
-path="res://.godot/imported/allwork.png-afcd358a87ce16997a34c9d4ab4cf534.ctex"
+uid="uid://torq7lk5y00y"
+path="res://.godot/imported/allwork.png-79e9cb67906e6e81a9a51728014fcbb0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Rooms/Images/allwork.png"
-dest_files=["res://.godot/imported/allwork.png-afcd358a87ce16997a34c9d4ab4cf534.ctex"]
+source_file="res://Rooms/H7E/allwork.png"
+dest_files=["res://.godot/imported/allwork.png-79e9cb67906e6e81a9a51728014fcbb0.ctex"]
 
 [params]
 

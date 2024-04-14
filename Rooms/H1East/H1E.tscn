@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://clv24p46g4ckq"]
+
+[ext_resource type="Texture2D" uid="uid://ce82yentkf7ca" path="res://Rooms/H1East/20240413_141431.png" id="1_uch2v"]
+
+[node name="H1E" type="Node2D"]
+
+[node name="BG" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(718, 542)
+texture = ExtResource("1_uch2v")

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ctvwrcspk81a2"
-path="res://.godot/imported/DSC_0699cropped.png-ddb0a1215763e7ae9a825fd47f7a876a.ctex"
+uid="uid://bkuwaf31t5u5x"
+path="res://.godot/imported/5310_3970.png-312d55f005ca65d53fbf62493d5ebf3f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Rooms/Images/DSC_0699cropped.png"
-dest_files=["res://.godot/imported/DSC_0699cropped.png-ddb0a1215763e7ae9a825fd47f7a876a.ctex"]
+source_file="res://Rooms/CNE/5310_3970.png"
+dest_files=["res://.godot/imported/5310_3970.png-312d55f005ca65d53fbf62493d5ebf3f.ctex"]
 
 [params]
 

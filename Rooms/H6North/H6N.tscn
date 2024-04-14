@@ -1,11 +1,11 @@
 [gd_scene load_steps=2 format=3 uid="uid://dlqrxc53prowf"]
 
-[ext_resource type="Texture2D" uid="uid://bd74k3axthj3n" path="res://Rooms/H6North/20240413_133453croppedtest.png" id="1_il4e0"]
+[ext_resource type="Texture2D" uid="uid://bd74k3axthj3n" path="res://Rooms/H6North/20240413_133453croppedtest.png" id="1_1cmve"]
 
 [node name="H6N" type="Node2D"]
 
 [node name="BG" type="Sprite2D" parent="."]
 z_index = -1
 position = Vector2(720, 540)
-texture = ExtResource("1_il4e0")
+texture = ExtResource("1_1cmve")
 flip_h = true

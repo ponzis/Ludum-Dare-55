@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bfa3mwux8wh0t"]
+
+[ext_resource type="Texture2D" uid="uid://drjke8t7e22ba" path="res://Rooms/H7E/makesjohnny.png" id="1_0b3e0"]
+
+[node name="H7E" type="Node2D"]
+
+[node name="BG" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(718, 542)
+texture = ExtResource("1_0b3e0")

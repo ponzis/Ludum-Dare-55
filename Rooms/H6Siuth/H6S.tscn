@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bitpqwdfqry44"]
+
+[ext_resource type="Texture2D" uid="uid://dv2pb6dmff8dp" path="res://Rooms/H6Siuth/DSC_0697cropped.png" id="1_rcrl0"]
+
+[node name="H6S" type="Node2D"]
+
+[node name="BG" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(720, 540)
+texture = ExtResource("1_rcrl0")

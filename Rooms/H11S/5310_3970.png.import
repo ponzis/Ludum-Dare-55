@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c0pk7snq0yvdi"
-path="res://.godot/imported/noplay.png-4b710c1af3bfb353afa96d2fea75e26d.ctex"
+uid="uid://d20sqrakddncc"
+path="res://.godot/imported/5310_3970.png-291f16710c5206b50f3f5c631f803296.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Rooms/Images/noplay.png"
-dest_files=["res://.godot/imported/noplay.png-4b710c1af3bfb353afa96d2fea75e26d.ctex"]
+source_file="res://Rooms/H11S/5310_3970.png"
+dest_files=["res://.godot/imported/5310_3970.png-291f16710c5206b50f3f5c631f803296.ctex"]
 
 [params]
 

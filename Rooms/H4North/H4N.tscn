@@ -1,10 +1,11 @@
 [gd_scene load_steps=2 format=3 uid="uid://xtd7nnryp3p2"]
 
-[ext_resource type="Texture2D" uid="uid://bd1cc4xtivne0" path="res://Rooms/7EndingScene/DSC_0710crpoppity.png" id="1_sq1w2"]
+[ext_resource type="Texture2D" uid="uid://stl7iibhsdnl" path="res://Rooms/H4North/DSC_0697cropped.png" id="1_4w6pb"]
 
-[node name="Science" type="Node2D"]
+[node name="H4N" type="Node2D"]
 
 [node name="BG" type="Sprite2D" parent="."]
 z_index = -1
 position = Vector2(720, 540)
-texture = ExtResource("1_sq1w2")
+texture = ExtResource("1_4w6pb")
+flip_h = true

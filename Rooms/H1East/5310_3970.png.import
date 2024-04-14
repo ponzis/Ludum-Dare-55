@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://drjke8t7e22ba"
-path="res://.godot/imported/makesjohnny.png-fb99f4d8f2c40f5531ed833247c1e988.ctex"
+uid="uid://c7squsd7ypvhu"
+path="res://.godot/imported/5310_3970.png-b22c6cebe28b1d1680cf698716dfff9d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Rooms/Images/makesjohnny.png"
-dest_files=["res://.godot/imported/makesjohnny.png-fb99f4d8f2c40f5531ed833247c1e988.ctex"]
+source_file="res://Rooms/H1East/5310_3970.png"
+dest_files=["res://.godot/imported/5310_3970.png-b22c6cebe28b1d1680cf698716dfff9d.ctex"]
 
 [params]
 

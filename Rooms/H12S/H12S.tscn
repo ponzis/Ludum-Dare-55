@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://iry0r81trwui"]
+
+[ext_resource type="Texture2D" uid="uid://ctvwrcspk81a2" path="res://Rooms/H12S/DSC_0699cropped.png" id="1_a8cof"]
+
+[node name="H12S" type="Node2D"]
+
+[node name="BG" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(718, 542)
+texture = ExtResource("1_a8cof")
