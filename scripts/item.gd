@@ -40,7 +40,10 @@ func set_flags(flags:Dictionary):
 var clickmask: BitMap = BitMap.new()
 
 # Called when the node enters the scene tree for the first time.
-func _ready():
+func _ready():#Onready overwrites the parents on ready
+	print("Bepis")
+	mouse_entered.connect(_on_mouse_entered)
+	mouse_exited.connect(_on_mouse_exited)
 	print("Item %s ready" % self.name)
 	if check_conditions(visibility_flags):
 		self.show()
@@ -48,7 +51,7 @@ func _ready():
 		self.hide()
 	Input.set_custom_mouse_cursor(crosshair)
 	make_clip_mask()
-	pass
+
 
 func make_clip_mask():
 	if self.texture_normal == null:

@@ -5,8 +5,10 @@ extends "res://scripts/item.gd"
 @export var set_flags_on_pickup := {}
 
 func _ready():
-	
-	pass
+	super()
+	print("Pickup Item")
+	pressed.connect(_on_pressed)
+
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -20,3 +22,4 @@ func _on_pressed():
 		set_flags(set_flags_on_pickup) # Set the relevant flags
 		self.hide() #Hide the picked up item
 	pass # Replace with function body.
+
