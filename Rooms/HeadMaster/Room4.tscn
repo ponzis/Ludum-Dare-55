@@ -26,7 +26,7 @@ offset_top = -40.0
 offset_right = 62.0
 offset_bottom = 32.0
 script = ExtResource("3_u034m")
-dialog_file = "res://Rooms/Room4/headmaster.json"
+dialog_file = "res://Rooms/HeadMaster/headmaster.json"
 
 [node name="PencilHolder" type="TextureButton" parent="Background"]
 offset_left = 4.5
