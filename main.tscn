@@ -1,11 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://ug4plaxep8f1"]
+[gd_scene load_steps=8 format=3 uid="uid://ug4plaxep8f1"]
 
 [ext_resource type="Script" path="res://scripts/gamemanager.gd" id="1_m0qrl"]
 [ext_resource type="Script" path="res://scripts/rooms.gd" id="2_plwn1"]
 [ext_resource type="PackedScene" uid="uid://bjmud580kf6yi" path="res://Rooms/0Main Menu/MainMenu.tscn" id="3_nvk34"]
 [ext_resource type="PackedScene" uid="uid://bwt04pbe02yvc" path="res://Rooms/HeadMasterOnOpen/Room4.tscn" id="4_664kq"]
 [ext_resource type="Theme" uid="uid://c1h7ben211tw3" path="res://input.tres" id="6_3vbfu"]
-[ext_resource type="LabelSettings" path="res://dialog.tres" id="7_mqo02"]
 [ext_resource type="Script" path="res://scripts/ui.gd" id="7_ssp2n"]
 [ext_resource type="Script" path="res://scripts/clock.gd" id="8_81sub"]
 
@@ -136,7 +135,6 @@ offset_top = -23.0
 offset_bottom = 27.0
 grow_horizontal = 2
 grow_vertical = 0
-label_settings = ExtResource("7_mqo02")
 horizontal_alignment = 1
 
 [connection signal="button_up" from="ui/Dialogue/Text/Option_1" to="ui" method="_on_option_1_button_up"]
