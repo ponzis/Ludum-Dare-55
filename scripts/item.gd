@@ -9,7 +9,7 @@ extends TextureButton
 @export var visibility_flags:= {}
 
 
-func check_conditions(flags:Dictionary,ignore_missing = true, return_if_met = true):
+func check_conditions(flags:Dictionary,ignore_missing = true, return_if_met = true):#TODO: Rename to check flags?
 	if flags.is_empty() and ignore_missing:
 		print("No flags set.")
 		return return_if_met
@@ -28,6 +28,11 @@ func check_conditions(flags:Dictionary,ignore_missing = true, return_if_met = tr
 					return not return_if_met #Else, autofail
 	return return_if_met #since we got through the ladder we are confirmed.
 
+func set_flags(flags:Dictionary):
+	print("Setting Flags")
+	for flag in flags.keys():
+		print("	%s"%flag)
+		game_manager.game_flags[flag]=flags[flag]
 
 
 
@@ -38,7 +43,9 @@ var clickmask: BitMap = BitMap.new()
 func _ready():
 	print("Item %s ready" % self.name)
 	if check_conditions(visibility_flags):
-		print("Item should be visible!")
+		self.show()
+	else:
+		self.hide()
 	Input.set_custom_mouse_cursor(crosshair)
 	make_clip_mask()
 	pass

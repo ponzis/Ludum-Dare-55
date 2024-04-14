@@ -1,5 +1,7 @@
 extends "res://scripts/item.gd"
 
+
+#Idea is that interacting with this item checks flags and then sets a bunch of flags
 #flags to check
 #@export var 
 
