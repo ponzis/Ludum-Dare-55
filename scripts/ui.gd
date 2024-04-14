@@ -22,7 +22,7 @@ func set_person_resposnses(responses: Array):
 		var option = responses[index]
 		
 		print(option_node_name, option)
-		var option_node: Label = get_node_or_null(option_node_name)
+		var option_node: Button = get_node_or_null(option_node_name)
 		if option_node == null: 
 			continue
 		option_node.text = option['text']
