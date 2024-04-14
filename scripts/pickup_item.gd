@@ -6,7 +6,6 @@ extends "res://scripts/item.gd"
 
 func _ready():
 	super()
-	print("Pickup Item")
 	pressed.connect(_on_pressed)
 
 

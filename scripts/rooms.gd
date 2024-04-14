@@ -8,6 +8,8 @@ func _ready():
 	#Moves into room 4
 	set_next_scene(4, Vector2(0, 0))
 
+signal room_update()
+
 
 func set_next_scene(index: int, start_loc: Vector2):
 	var room_node_name =  'Room%d' % index
@@ -24,7 +26,7 @@ func set_next_scene(index: int, start_loc: Vector2):
 	# Hides current room
 	if current_room != null:
 		current_room.hide()
-		
+	room_update.emit()
 	next_room.show()
 	current_room = next_room
 	

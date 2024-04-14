@@ -49,7 +49,11 @@ texture_normal = ExtResource("5_o1l45")
 script = ExtResource("6_uur28")
 set_flags_on_pickup = {
 "CAN_SEE_GLORBO": true,
+"CAN_SEE_GODOT": false,
 "Oooble": true
+}
+visibility_flags = {
+"CAN_SEE_GODOT": true
 }
 
 [node name="TextureButton" type="TextureButton" parent="Background"]

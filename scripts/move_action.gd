@@ -2,7 +2,7 @@ extends "res://scripts/item.gd"
 
 @export var next_room_id: int
 
-@onready var room_manager = get_node('/root/Main/rooms')
+#@onready var room_manager = get_node('/root/Main/rooms')
 
 
 func _on_pressed():
