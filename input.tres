@@ -5,4 +5,4 @@
 [resource]
 default_font = ExtResource("1_0a5c6")
 default_font_size = 48
-Button/colors/font_hover_color = Color(0.588143, 0.231476, 0.188565, 1)
+Button/colors/font_hover_color = Color(0.87451, 0.117647, 0.172549, 1)
