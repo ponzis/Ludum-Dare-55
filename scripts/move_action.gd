@@ -10,6 +10,8 @@ func _ready():
 	pressed.connect(_on_pressed)
 
 func _on_pressed():
+	if uilock: 
+		return
 	game_manager.time_elapsed(action_cost)
 	print("eleapsed: ", game_manager.action_counter)
 	#Sets the flags for completeing the move

@@ -7,15 +7,14 @@
 [ext_resource type="PackedScene" uid="uid://dvhln3ys50oh" path="res://Rooms/CNE/HallwayPrincipal.tscn" id="5_4c0sb"]
 [ext_resource type="PackedScene" uid="uid://xtd7nnryp3p2" path="res://Rooms/H4North/H4N.tscn" id="6_28uj8"]
 [ext_resource type="PackedScene" uid="uid://bitpqwdfqry44" path="res://Rooms/H6Siuth/H6S.tscn" id="7_jttov"]
+[ext_resource type="Theme" uid="uid://c1h7ben211tw3" path="res://input.tres" id="6_3vbfu"]
 [ext_resource type="Script" path="res://scripts/ui.gd" id="7_ssp2n"]
 [ext_resource type="Script" path="res://scripts/clock.gd" id="8_81sub"]
 [ext_resource type="PackedScene" uid="uid://y73op4q28ody" path="res://Rooms/7EndingScene/EndingScene.tscn" id="8_hcxlo"]
 
-[sub_resource type="Theme" id="Theme_o07dl"]
-Fonts/fonts/large = null
-
 [node name="Main" type="Node2D"]
 script = ExtResource("1_m0qrl")
+metadata/_edit_horizontal_guides_ = [20.0]
 
 [node name="rooms" type="Node" parent="."]
 script = ExtResource("2_plwn1")
@@ -34,6 +33,7 @@ anchor_bottom = 1.0
 offset_top = -200.0
 grow_horizontal = 2
 grow_vertical = 0
+theme = ExtResource("6_3vbfu")
 
 [node name="ColorRect" type="ColorRect" parent="ui/Dialogue"]
 layout_mode = 1
@@ -45,66 +45,74 @@ grow_vertical = 2
 color = Color(0.156863, 0.156863, 0.156863, 0.619608)
 
 [node name="Name" type="Label" parent="ui/Dialogue"]
-layout_mode = 0
-offset_left = 400.0
-offset_top = 7.0
-offset_right = 447.0
-offset_bottom = 30.0
-theme = SubResource("Theme_o07dl")
+layout_mode = 1
+offset_left = 50.0
+offset_top = 10.0
+offset_right = 123.0
+offset_bottom = 40.0
 text = "NAME"
 
 [node name="Text" type="Label" parent="ui/Dialogue"]
 layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -229.0
-offset_top = 48.0
-offset_right = 229.0
-offset_bottom = 96.0
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 30.0
+offset_bottom = 56.0
 grow_horizontal = 2
 text = "This is  the text"
+horizontal_alignment = 1
 
 [node name="Option_1" type="Button" parent="ui/Dialogue/Text"]
-layout_mode = 0
-offset_top = 24.0
-offset_right = 199.0
-offset_bottom = 55.0
-text = "A"
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -529.0
+offset_top = 30.0
+offset_right = 529.0
+offset_bottom = 38.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Yeah, all of my art supplies. They might be in my home room but I'm not allowed back in"
+flat = true
 
 [node name="Option_2" type="Button" parent="ui/Dialogue/Text"]
 layout_mode = 1
-anchors_preset = 7
+anchors_preset = 13
 anchor_left = 0.5
-anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -228.0
-offset_top = 6.0
-offset_right = -30.0
-offset_bottom = 37.0
+offset_left = -13.5
+offset_top = 60.0
+offset_right = 13.5
+offset_bottom = 68.0
 grow_horizontal = 2
-grow_vertical = 0
+grow_vertical = 2
 text = "B"
+flat = true
+alignment = 0
 
 [node name="Option_3" type="Button" parent="ui/Dialogue/Text"]
 layout_mode = 1
-anchors_preset = 7
+anchors_preset = 13
 anchor_left = 0.5
-anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -231.0
-offset_top = 38.0
-offset_right = -33.0
-offset_bottom = 69.0
+offset_left = -13.5
+offset_top = 90.0
+offset_right = 13.5
+offset_bottom = 98.0
 grow_horizontal = 2
-grow_vertical = 0
+grow_vertical = 2
 text = "C"
+flat = true
+alignment = 0
 
 [node name="Clock" type="Label" parent="ui"]
 offset_right = 40.0
 offset_bottom = 23.0
+theme = ExtResource("6_3vbfu")
 text = "Time"
 script = ExtResource("8_81sub")
 
@@ -117,6 +125,7 @@ offset_top = 100.0
 offset_bottom = -180.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("6_3vbfu")
 stretch_mode = 5
 metadata/_edit_use_anchors_ = true
 

@@ -10,6 +10,17 @@ var action_counter: int = 0
 signal time_update(time: int)
 
 
+
+var uilock:bool
+signal ui_lock(locked: bool)
+
+func toggle_ui_lock():
+	set_ui_lock(!uilock)
+
+func set_ui_lock(lock):
+	uilock = lock
+	ui_lock.emit(lock)
+
 func time_elapsed(cost: int):
 	action_counter += cost
 	time_update.emit(action_counter)

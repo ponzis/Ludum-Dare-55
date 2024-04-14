@@ -19,6 +19,7 @@ extends TextureButton
 @export_group("Completion Flags")
 @export var flags_on_completion:= {}
 
+var uilock: bool
 
 func check_conditions(flags:Dictionary,ignore_missing = true, return_if_met = true):#TODO: Rename to check flags?
 	if flags.is_empty() and ignore_missing:
@@ -56,6 +57,8 @@ func _ready():#Onready overwrites the parents on ready
 	mouse_entered.connect(_on_mouse_entered)
 	mouse_exited.connect(_on_mouse_exited)
 	
+	
+	game_manager.ui_lock.connect(_on_ui_lock)
 	room_manager.room_update.connect(_on_room_update)
 
 	print("Item %s ready" % self.name)
@@ -83,7 +86,13 @@ func _process(delta):
 	pass
 
 
+func _on_ui_lock(lock: bool):
+	print('Locked')
+	uilock = lock
+
 func _on_mouse_entered():
+	if uilock: 
+		return
 	print("Enter")
 	Input.set_custom_mouse_cursor(grab)
 	

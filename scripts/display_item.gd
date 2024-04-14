@@ -22,6 +22,8 @@ func set_events():
 
 
 func _on_pressed():
+	if uilock: 
+		return
 	set_events()
 	ui_manager.show_display_image()
 	ui_manager.display_image(overlay, description)
