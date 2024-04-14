@@ -1,10 +1,25 @@
-[gd_scene load_steps=2 format=3 uid="uid://dvhln3ys50oh"]
+[gd_scene load_steps=3 format=3 uid="uid://dvhln3ys50oh"]
 
-[ext_resource type="Texture2D" uid="uid://chnk6c33j5ypf" path="res://Rooms/HallwayPrincipal/5310_3970.png" id="1_as487"]
+[ext_resource type="Texture2D" uid="uid://bkuwaf31t5u5x" path="res://Rooms/CNE/5310_3970.png" id="1_cwgx7"]
+[ext_resource type="Script" path="res://scripts/move_action.gd" id="2_l773p"]
 
 [node name="HallwayPrincipal" type="Node2D"]
 
 [node name="BG" type="Sprite2D" parent="."]
 z_index = -1
-position = Vector2(718, 542)
-texture = ExtResource("1_as487")
+position = Vector2(721, 542)
+texture = ExtResource("1_cwgx7")
+
+[node name="Right" type="TextureButton" parent="BG"]
+offset_left = 527.0
+offset_top = -292.0
+offset_right = 713.0
+offset_bottom = 535.0
+script = ExtResource("2_l773p")
+
+[node name="Left" type="TextureButton" parent="BG"]
+offset_left = -714.0
+offset_top = -341.0
+offset_right = -515.0
+offset_bottom = 543.0
+script = ExtResource("2_l773p")

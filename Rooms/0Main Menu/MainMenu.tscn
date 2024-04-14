@@ -30,6 +30,7 @@ offset_top = 222.0
 offset_right = 837.0
 offset_bottom = 961.0
 script = ExtResource("1_0ey7f")
+next_room_id = 2
 flags_on_completion = {
 "MAIN_MAN": true
 }

@@ -1,11 +1,15 @@
-[gd_scene load_steps=8 format=3 uid="uid://ug4plaxep8f1"]
+[gd_scene load_steps=12 format=3 uid="uid://ug4plaxep8f1"]
 
 [ext_resource type="Script" path="res://scripts/gamemanager.gd" id="1_m0qrl"]
 [ext_resource type="Script" path="res://scripts/rooms.gd" id="2_plwn1"]
 [ext_resource type="PackedScene" uid="uid://bjmud580kf6yi" path="res://Rooms/0Main Menu/MainMenu.tscn" id="3_nvk34"]
 [ext_resource type="PackedScene" uid="uid://bwt04pbe02yvc" path="res://Rooms/HeadMasterOnOpen/Room4.tscn" id="4_664kq"]
+[ext_resource type="PackedScene" uid="uid://dvhln3ys50oh" path="res://Rooms/CNE/HallwayPrincipal.tscn" id="5_4c0sb"]
+[ext_resource type="PackedScene" uid="uid://xtd7nnryp3p2" path="res://Rooms/H4North/H4N.tscn" id="6_28uj8"]
+[ext_resource type="PackedScene" uid="uid://bitpqwdfqry44" path="res://Rooms/H6Siuth/H6S.tscn" id="7_jttov"]
 [ext_resource type="Script" path="res://scripts/ui.gd" id="7_ssp2n"]
 [ext_resource type="Script" path="res://scripts/clock.gd" id="8_81sub"]
+[ext_resource type="PackedScene" uid="uid://y73op4q28ody" path="res://Rooms/7EndingScene/EndingScene.tscn" id="8_hcxlo"]
 
 [sub_resource type="Theme" id="Theme_o07dl"]
 Fonts/fonts/large = null
@@ -15,7 +19,7 @@ script = ExtResource("1_m0qrl")
 
 [node name="rooms" type="Node" parent="."]
 script = ExtResource("2_plwn1")
-scenes = Array[PackedScene]([ExtResource("3_nvk34"), ExtResource("4_664kq")])
+scenes = Array[PackedScene]([ExtResource("3_nvk34"), ExtResource("4_664kq"), ExtResource("5_4c0sb"), ExtResource("6_28uj8"), ExtResource("7_jttov"), ExtResource("8_hcxlo")])
 
 [node name="ui" type="Node" parent="."]
 script = ExtResource("7_ssp2n")
