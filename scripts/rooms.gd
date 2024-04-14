@@ -5,6 +5,7 @@ extends Node
 var current_room: Node2D
 
 func _ready():
+	#Moves into room 4
 	set_next_scene(4, Vector2(0, 0))
 
 

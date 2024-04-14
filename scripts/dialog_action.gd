@@ -1,15 +1,14 @@
 extends "res://scripts/item.gd"
 
 
-@export var peron_name: String
-
 @export_file("*.json")  var dialog_file: String
 
 @onready var ui_manager = get_node('/root/Main/ui')
 
+@onready var dialogue = get_dialogue()
 
 var state = {}
-var dialogue = {}
+#var dialogue = {}
 
 
 func get_dialogue() -> Dictionary:
@@ -57,7 +56,7 @@ func get_dialogue_responses(responses) -> Array:
 
 func dialog():
 	print('Getting file')
-	dialogue = get_dialogue()
+	#dialogue = get_dialogue()
 	ui_manager.set_person_name(dialogue['name'])
 	var tree = get_dialogue_tree(dialogue['tree'])
 	var resposnses = get_dialogue_responses(tree['response'])
@@ -68,6 +67,6 @@ func dialog():
 	pass
 
 func _on_pressed():
-	print("START CHAT with %s" % peron_name)
+	print("START CHAT with %s" % dialogue['name'])
 	dialog()
 	pass
