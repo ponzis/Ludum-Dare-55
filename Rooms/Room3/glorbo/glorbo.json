@@ -1,0 +1,20 @@
+{
+	"name":"Glorbo",
+	"tree":[{
+		"condition": "",
+		"text": "I am Glorbo!",
+		"response": [
+			{"text": "Glorbo?????",
+				"effect": {
+					"key": "MAKE_GLORBO_SAD",
+					"value": true
+				}
+			},
+			{"text": "Glorbo!!!!!!!",
+			"effect": {
+				"key": "MAKE_GLORBO_HAPPY",
+				"value": true
+			}}
+		]
+	}]
+}

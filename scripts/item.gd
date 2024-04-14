@@ -8,6 +8,8 @@ extends TextureButton
 
 @export var visibility_flags:= {}
 
+@export var visible_without_flag := true
+
 
 func check_conditions(flags:Dictionary,ignore_missing = true, return_if_met = true):#TODO: Rename to check flags?
 	if flags.is_empty() and ignore_missing:
@@ -43,9 +45,11 @@ func _ready():#Onready overwrites the parents on ready
 	mouse_entered.connect(_on_mouse_entered)
 	mouse_exited.connect(_on_mouse_exited)
 	print("Item %s ready" % self.name)
-	if check_conditions(visibility_flags):
+	if check_conditions(visibility_flags,visible_without_flag):
+		print("SHOWING!")
 		self.show()
 	else:
+		print("HIDING")
 		self.hide()
 	Input.set_custom_mouse_cursor(crosshair)
 	make_clip_mask()
