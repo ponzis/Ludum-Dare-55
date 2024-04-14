@@ -36,9 +36,20 @@ offset_bottom = 68.3333
 scale = Vector2(0.374598, 0.507877)
 script = ExtResource("4_yd0rg")
 
+[node name="Headmaster2" type="TextureButton" parent="Background"]
+offset_left = -87.0
+offset_top = -80.0
+offset_right = -28.0
+offset_bottom = -26.0
+script = ExtResource("3_u034m")
+dialog_file = "res://Rooms/HeadMaster/headmaster2.json"
+
 [connection signal="mouse_entered" from="Background/Folder" to="Background/Folder" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Background/Folder" to="Background/Folder" method="_on_mouse_exited"]
 [connection signal="pressed" from="Background/Folder" to="Background/Folder" method="_on_pressed"]
 [connection signal="mouse_entered" from="Background/Headmaster" to="Background/Headmaster" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Background/Headmaster" to="Background/Headmaster" method="_on_mouse_exited"]
 [connection signal="pressed" from="Background/Headmaster" to="Background/Headmaster" method="_on_pressed"]
+[connection signal="mouse_entered" from="Background/Headmaster2" to="Background/Headmaster2" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Background/Headmaster2" to="Background/Headmaster2" method="_on_mouse_exited"]
+[connection signal="pressed" from="Background/Headmaster2" to="Background/Headmaster2" method="_on_pressed"]

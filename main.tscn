@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://ug4plaxep8f1"]
+[gd_scene load_steps=9 format=3 uid="uid://ug4plaxep8f1"]
 
 [ext_resource type="Script" path="res://scripts/gamemanager.gd" id="1_m0qrl"]
 [ext_resource type="Script" path="res://scripts/rooms.gd" id="2_plwn1"]
@@ -7,6 +7,9 @@
 [ext_resource type="PackedScene" uid="uid://cpe460ngmlu2y" path="res://Rooms/Room2/Room2.tscn" id="4_wt6he"]
 [ext_resource type="PackedScene" uid="uid://c5cy8plttdff3" path="res://Rooms/Room3/Room3.tscn" id="5_21fij"]
 [ext_resource type="Script" path="res://scripts/ui.gd" id="7_ssp2n"]
+
+[sub_resource type="Theme" id="Theme_o07dl"]
+Fonts/fonts/large = null
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_m0qrl")
@@ -59,6 +62,7 @@ offset_left = 400.0
 offset_top = 7.0
 offset_right = 447.0
 offset_bottom = 30.0
+theme = SubResource("Theme_o07dl")
 text = "NAME"
 
 [node name="Text" type="Label" parent="ui/Dialogue"]

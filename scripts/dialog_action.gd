@@ -6,10 +6,14 @@ extends "res://scripts/item.gd"
 @onready var ui_manager = get_node('/root/Main/ui')
 
 @onready var dialogue = get_dialogue()
-
 var state = {}
 #var dialogue = {}
 
+func _ready():
+	pass
+
+func _on_dialogue_clicked(option):
+	print("Hit log ", option, " from ", dialogue['name'])
 
 func get_dialogue() -> Dictionary:
 	var file = FileAccess.open(dialog_file, FileAccess.READ)
@@ -54,9 +58,15 @@ func get_dialogue_responses(responses) -> Array:
 	return returns
 
 
+func set_events():
+	for conection in ui_manager.dialogue_clicked.get_connections():
+		ui_manager.dialogue_clicked.disconnect(conection['callable'])
+	ui_manager.dialogue_clicked.connect(_on_dialogue_clicked)
+
 func dialog():
 	print('Getting file')
 	#dialogue = get_dialogue()
+	set_events()
 	ui_manager.set_person_name(dialogue['name'])
 	var tree = get_dialogue_tree(dialogue['tree'])
 	var resposnses = get_dialogue_responses(tree['response'])
