@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://xtd7nnryp3p2"]
+[gd_scene load_steps=4 format=3 uid="uid://xtd7nnryp3p2"]
 
 [ext_resource type="Texture2D" uid="uid://stl7iibhsdnl" path="res://Rooms/H4North/DSC_0697cropped.png" id="1_4w6pb"]
+[ext_resource type="Texture2D" uid="uid://cifef12mqi0kw" path="res://BackOutbutton.png" id="2_q1nwj"]
+[ext_resource type="Script" path="res://scripts/move_action.gd" id="3_k45ud"]
 
 [node name="H4N" type="Node2D"]
 
@@ -11,8 +13,13 @@ texture = ExtResource("1_4w6pb")
 flip_h = true
 
 [node name="BackToPrincipalDoor" type="TextureButton" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 678.0
+offset_top = 861.0
+offset_right = 878.0
+offset_bottom = 1061.0
+texture_normal = ExtResource("2_q1nwj")
+script = ExtResource("3_k45ud")
+next_room_id = 6
 
 [node name="TextureButton2" type="TextureButton" parent="."]
 offset_right = 40.0

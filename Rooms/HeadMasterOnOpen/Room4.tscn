@@ -67,6 +67,9 @@ scale = Vector2(0.2, 0.2)
 texture_normal = ExtResource("8_lo3r7")
 script = ExtResource("2_7o15o")
 next_room_id = 3
+flags_on_completion = {
+"SUCCESS": false
+}
 
 [connection signal="mouse_entered" from="Background/Folder" to="Background/Folder" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Background/Folder" to="Background/Folder" method="_on_mouse_exited"]

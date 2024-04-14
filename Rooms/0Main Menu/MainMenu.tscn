@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/move_action.gd" id="1_0ey7f"]
 [ext_resource type="Texture2D" uid="uid://c0didi34qssci" path="res://Rooms/0Main Menu/MainMenuDoor.png" id="1_y8l4e"]
-[ext_resource type="FontFile" uid="uid://dkgplh7lafld" path="res://garbage.ttf" id="2_c2wj8"]
+[ext_resource type="FontFile" uid="uid://d23wb7pw2nut1" path="res://garbage.ttf" id="2_c2wj8"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_3wqdj"]
 font = ExtResource("2_c2wj8")
@@ -31,6 +31,8 @@ offset_right = 837.0
 offset_bottom = 961.0
 script = ExtResource("1_0ey7f")
 next_room_id = 2
+action_cost = 0
 flags_on_completion = {
-"MAIN_MAN": true
+"OUT_OF_TIME": false,
+"SUCCESS": false
 }
