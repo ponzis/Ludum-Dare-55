@@ -12,6 +12,7 @@ extends TextureButton
 
 @export var visible_without_flag := true
 
+@export_range(0, 100) var action_cost: int = 5
 
 func check_conditions(flags:Dictionary,ignore_missing = true, return_if_met = true):#TODO: Rename to check flags?
 	if flags.is_empty() and ignore_missing:
@@ -61,8 +62,6 @@ func _ready():#Onready overwrites the parents on ready
 		self.hide()
 	Input.set_custom_mouse_cursor(crosshair)
 	make_clip_mask()
-
-
 
 func make_clip_mask():
 	if self.texture_normal == null:

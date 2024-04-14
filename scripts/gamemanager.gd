@@ -4,8 +4,15 @@ extends Node
 var game_flags = {} 
 
 # this stores action counter
-var action_counter = 0
+var action_counter: int = 0
 
+
+signal time_update(time: int)
+
+
+func time_elapsed(cost: int):
+	action_counter += cost
+	time_update.emit(action_counter)
 
 ###flags
 ### TALK_TO_GLORBO

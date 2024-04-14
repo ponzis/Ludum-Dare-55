@@ -6,4 +6,6 @@ extends "res://scripts/item.gd"
 
 
 func _on_pressed():
+	game_manager.time_elapsed(action_cost)
+	print("eleapsed: ", game_manager.action_counter)
 	room_manager.set_next_scene(next_room_id, Vector2(0, 0))
