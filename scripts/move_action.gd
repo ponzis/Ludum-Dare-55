@@ -16,4 +16,5 @@ func _on_pressed():
 	print("eleapsed: ", game_manager.action_counter)
 	#Sets the flags for completeing the move
 	set_flags(flags_on_completion)
+	game_manager.trigger_game_flags_update()
 	room_manager.set_next_scene(next_room_id, Vector2(0, 0))

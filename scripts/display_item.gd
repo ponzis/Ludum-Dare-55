@@ -28,6 +28,8 @@ func _on_pressed():
 	ui_manager.show_display_image()
 	ui_manager.display_image(overlay, description)
 	#set flags here
+	set_flags(flags_on_completion)
+	game_manager.trigger_game_flags_update()
 
 func _on_overlay_clicked():
 	ui_manager.hide_display_image()

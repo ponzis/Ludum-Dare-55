@@ -59,18 +59,22 @@ func _ready():#Onready overwrites the parents on ready
 	
 	
 	game_manager.ui_lock.connect(_on_ui_lock)
+	game_manager.game_flags_update.connect(_on_game_flags_update)
 	room_manager.room_update.connect(_on_room_update)
 
 	print("Item %s ready" % self.name)
 	#Set loaded visibility
-	if check_conditions(visibility_flags,visible_without_flag):
-		print("SHOWING!")
-		self.show()
-	else:
-		print("HIDING")
-		self.hide()
+	set_visability()
 	Input.set_custom_mouse_cursor(crosshair)
 	make_clip_mask()
+
+func set_visability():
+	if check_conditions(visibility_flags,visible_without_flag):
+		print("SHOWING!", self.name)
+		self.show()
+	else:
+		print("HIDING", self.name)
+		self.hide()
 
 func make_clip_mask():
 	if self.texture_normal == null:
@@ -87,7 +91,6 @@ func _process(delta):
 
 
 func _on_ui_lock(lock: bool):
-	print('Locked')
 	uilock = lock
 
 func _on_mouse_entered():
@@ -101,11 +104,9 @@ func _on_mouse_exited():
 	print("Exited")
 	Input.set_custom_mouse_cursor(crosshair)
 
+func _on_game_flags_update():
+	set_visability()
+
 func _on_room_update():
-	if check_conditions(visibility_flags,visible_without_flag):
-		print("SHOWING!")
-		self.show()
-	else:
-		print("HIDING")
-		self.hide()
+	set_visability()
 

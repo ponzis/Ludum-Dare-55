@@ -1,7 +1,14 @@
 extends Node
 
 # this is a place to store all the game flags
-var game_flags = {} 
+var game_flags = {}
+func set_game_flag(key, value):
+	game_flags[key] = value
+	trigger_game_flags_update()
+ 
+signal game_flags_update()
+func trigger_game_flags_update():
+	game_flags_update.emit()
 
 # this stores action counter
 var action_counter: int = 0

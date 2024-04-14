@@ -24,6 +24,7 @@ func _on_dialogue_clicked(option):
 
 	if !selected_response.has('tree'):
 		ui_manager.hide_dialoge()
+		game_manager.trigger_game_flags_update()
 		return
 		
 	set_dialogue_tree(selected_response['tree'])
