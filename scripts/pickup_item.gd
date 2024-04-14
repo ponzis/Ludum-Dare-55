@@ -17,6 +17,8 @@ func _process(delta):
 #Maybe add a replace node to it...
 
 func _on_pressed():
+	if uilock: 
+		return
 	if check_conditions(required_pickup_flags):
 		set_flags(set_flags_on_pickup) # Set the relevant flags
 		self.hide() #Hide the picked up item

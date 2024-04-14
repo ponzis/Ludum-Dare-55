@@ -106,6 +106,8 @@ func start_dialog():
 
 
 func _on_pressed():
+	if uilock: 
+		return
 	print("START CHAT with %s" % dialogue['name'])
 	start_dialog()
 	pass

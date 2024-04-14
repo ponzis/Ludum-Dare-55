@@ -1,5 +1,7 @@
 extends Node
 
+@onready var game_manager = get_node('/root/Main')
+
 var button_count = 3
 
 func set_person_name(person_name: String):
@@ -34,6 +36,7 @@ func hide_dialoge():
 	var dialogue_node: Control = get_node_or_null('Dialogue')
 	if dialogue_node == null:
 		return
+	game_manager.set_ui_lock(false)
 	dialogue_node.hide()
 
 func show_dialoge():
@@ -41,6 +44,7 @@ func show_dialoge():
 	if dialogue_node == null:
 		return
 	hide_display_image()
+	game_manager.set_ui_lock(true)
 	dialogue_node.show()
 
 
@@ -49,12 +53,14 @@ func show_display_image():
 	if overlay_node == null:
 		return
 	hide_dialoge()
+	game_manager.set_ui_lock(true)
 	overlay_node.show()
 
 func hide_display_image():
 	var overlay_node: TextureButton = get_node_or_null('Overlay')
 	if overlay_node == null:
 		return
+	game_manager.set_ui_lock(false)
 	overlay_node.hide()
 
 
