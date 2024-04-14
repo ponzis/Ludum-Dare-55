@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://bwt04pbe02yvc"]
+[gd_scene load_steps=9 format=3 uid="uid://bwt04pbe02yvc"]
 
 [ext_resource type="Texture2D" uid="uid://c5vsf2lv7fbu5" path="res://Rooms/HeadMaster/test2.png" id="1_rxhgl"]
 [ext_resource type="Script" path="res://scripts/move_action.gd" id="2_yo1aw"]
 [ext_resource type="Script" path="res://scripts/dialog_action.gd" id="3_u034m"]
-[ext_resource type="Script" path="res://scripts/event_item.gd" id="4_yd0rg"]
+[ext_resource type="Script" path="res://scripts/display_item.gd" id="4_xqidq"]
+[ext_resource type="Texture2D" uid="uid://b1ve1eegt26a1" path="res://crosshair_24.svg" id="5_eih2a"]
 [ext_resource type="Texture2D" uid="uid://dyu1neqlp1fnp" path="res://icon.svg" id="5_o1l45"]
 [ext_resource type="Script" path="res://scripts/pickup_item.gd" id="6_uur28"]
 [ext_resource type="Texture2D" uid="uid://erj7fart7jky" path="res://grab_24.svg" id="7_4o8h6"]
@@ -37,7 +38,9 @@ offset_top = -72.8333
 offset_right = 129.5
 offset_bottom = -32.8333
 scale = Vector2(0.374598, 0.507877)
-script = ExtResource("4_yd0rg")
+script = ExtResource("4_xqidq")
+description = "This is a pencil holder"
+overlay = ExtResource("5_eih2a")
 
 [node name="PickupItem" type="TextureButton" parent="Background"]
 offset_left = -93.6667
