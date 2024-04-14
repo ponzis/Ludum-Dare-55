@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://bwt04pbe02yvc"]
+[gd_scene load_steps=7 format=3 uid="uid://bwt04pbe02yvc"]
 
 [ext_resource type="Texture2D" uid="uid://c5vsf2lv7fbu5" path="res://Rooms/HeadMaster/test2.png" id="1_rxhgl"]
 [ext_resource type="Script" path="res://scripts/move_action.gd" id="2_yo1aw"]
 [ext_resource type="Script" path="res://scripts/dialog_action.gd" id="3_u034m"]
 [ext_resource type="Script" path="res://scripts/event_item.gd" id="4_yd0rg"]
+[ext_resource type="Script" path="res://Rooms/HeadMaster/pickup_item.gd" id="5_nqyfy"]
+[ext_resource type="Texture2D" uid="uid://dyu1neqlp1fnp" path="res://icon.svg" id="5_o1l45"]
 
 [node name="Room4" type="Node2D"]
 scale = Vector2(6, 6)
@@ -35,8 +37,17 @@ offset_right = 44.5
 offset_bottom = 68.3333
 scale = Vector2(0.374598, 0.507877)
 script = ExtResource("4_yd0rg")
-visibility_flags = {
-"REEEEEEEEEEEEEEEEEEEEEEEEEEEEE": true
+
+[node name="PickupItem" type="TextureButton" parent="Background"]
+offset_left = -98.0
+offset_top = -61.0
+offset_right = 30.0
+offset_bottom = 67.0
+scale = Vector2(0.695015, 0.285648)
+texture_normal = ExtResource("5_o1l45")
+script = ExtResource("5_nqyfy")
+set_flags_on_pickup = {
+"Oooble": true
 }
 
 [connection signal="mouse_entered" from="Background/Folder" to="Background/Folder" method="_on_mouse_entered"]
@@ -45,3 +56,4 @@ visibility_flags = {
 [connection signal="mouse_entered" from="Background/Headmaster" to="Background/Headmaster" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Background/Headmaster" to="Background/Headmaster" method="_on_mouse_exited"]
 [connection signal="pressed" from="Background/Headmaster" to="Background/Headmaster" method="_on_pressed"]
+[connection signal="pressed" from="Background/PickupItem" to="Background/PickupItem" method="_on_pressed"]
