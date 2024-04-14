@@ -38,6 +38,7 @@ scale = Vector2(7, 7)
 script = ExtResource("7_ssp2n")
 
 [node name="Dialogue" type="Control" parent="ui"]
+visible = false
 layout_mode = 3
 anchors_preset = 12
 anchor_top = 1.0

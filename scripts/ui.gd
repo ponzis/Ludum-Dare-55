@@ -36,7 +36,17 @@ func set_person_resposnses(responses: Array):
 				continue
 			option_node.hide()
 
+func hide_dialoge():
+	var dialogue_node: Control = get_node_or_null('Dialogue')
+	if dialogue_node == null:
+		return
+	dialogue_node.hide()
 
+func show_dialoge():
+	var dialogue_node: Control = get_node_or_null('Dialogue')
+	if dialogue_node == null:
+		return
+	dialogue_node.show()
 
 signal dialogue_clicked(option: int)
 

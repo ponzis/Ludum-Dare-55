@@ -15,19 +15,13 @@ func _ready():
 
 func _on_dialogue_clicked(option):
 	print("Hit log ", option, " from ", dialogue['name'])
+	ui_manager.hide_dialoge()
 
 func get_dialogue() -> Dictionary:
 	var file = FileAccess.open(dialog_file, FileAccess.READ)
 	var json_object = JSON.new()
 	json_object.parse(file.get_as_text())
 	return json_object.get_data()
-
-
-func set_state(new_state):
-	state = new_state
-
-func set_dialogue(new_dialogue):
-	dialogue = new_dialogue
 
 func check_codnition(conditon):
 	if conditon is String:
@@ -65,6 +59,7 @@ func set_events():
 func dialog():
 	print('Getting file')
 	#dialogue = get_dialogue()
+	ui_manager.show_dialoge()
 	set_events()
 	ui_manager.set_person_name(dialogue['name'])
 	var tree = get_dialogue_tree(dialogue['tree'])
@@ -72,8 +67,6 @@ func dialog():
 	
 	ui_manager.set_person_text(tree['text'])
 	ui_manager.set_person_resposnses(resposnses)
-	
-	pass
 
 func _on_pressed():
 	print("START CHAT with %s" % dialogue['name'])
