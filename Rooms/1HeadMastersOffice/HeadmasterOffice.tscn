@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://8mvjydx67dm2" path="res://SpeakCursor.svg" id="3_c153e"]
 [ext_resource type="Script" path="res://scripts/move_action.gd" id="4_wk8d3"]
 [ext_resource type="Texture2D" uid="uid://uarkxd6dxkd5" path="res://InspectCursor.svg" id="5_w1bry"]
-[ext_resource type="Texture2D" uid="uid://cifef12mqi0kw" path="res://Rooms/HeadMaster/BackOutbutton.png" id="6_5eki6"]
+[ext_resource type="Texture2D" uid="uid://cifef12mqi0kw" path="res://Rooms/HeadMasterOnOpen/BackOutbutton.png" id="6_ustr8"]
 [ext_resource type="Texture2D" uid="uid://bx7mnllvyfval" path="res://Exit.svg" id="7_by7vq"]
 
 [node name="HeadmasterOffice" type="Node2D"]
@@ -37,6 +37,6 @@ offset_left = 579.0
 offset_top = 121.0
 offset_right = 779.0
 offset_bottom = 321.0
-texture_normal = ExtResource("6_5eki6")
+texture_normal = ExtResource("6_ustr8")
 script = ExtResource("4_wk8d3")
 grab = ExtResource("7_by7vq")

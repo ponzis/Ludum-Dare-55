@@ -1,27 +1,29 @@
 [gd_scene load_steps=9 format=3 uid="uid://bwt04pbe02yvc"]
 
-[ext_resource type="Texture2D" uid="uid://c5vsf2lv7fbu5" path="res://Rooms/HeadMaster/test2.png" id="1_rxhgl"]
-[ext_resource type="Script" path="res://scripts/move_action.gd" id="2_yo1aw"]
-[ext_resource type="Script" path="res://scripts/dialog_action.gd" id="3_u034m"]
-[ext_resource type="Script" path="res://scripts/display_item.gd" id="4_xqidq"]
-[ext_resource type="Texture2D" uid="uid://b1ve1eegt26a1" path="res://crosshair_24.svg" id="5_eih2a"]
-[ext_resource type="Texture2D" uid="uid://dyu1neqlp1fnp" path="res://icon.svg" id="5_o1l45"]
-[ext_resource type="Script" path="res://scripts/pickup_item.gd" id="6_uur28"]
-[ext_resource type="Texture2D" uid="uid://erj7fart7jky" path="res://grab_24.svg" id="7_4o8h6"]
+[ext_resource type="Texture2D" uid="uid://c5vsf2lv7fbu5" path="res://Rooms/HeadMasterOnOpen/test2.png" id="1_ikq6l"]
+[ext_resource type="Script" path="res://scripts/move_action.gd" id="2_7o15o"]
+[ext_resource type="Script" path="res://scripts/dialog_action.gd" id="3_mukdi"]
+[ext_resource type="Script" path="res://scripts/display_item.gd" id="4_4isak"]
+[ext_resource type="Texture2D" uid="uid://b1ve1eegt26a1" path="res://crosshair_24.svg" id="5_px7oh"]
+[ext_resource type="Texture2D" uid="uid://dyu1neqlp1fnp" path="res://icon.svg" id="6_21bho"]
+[ext_resource type="Script" path="res://scripts/pickup_item.gd" id="7_o3wb4"]
+[ext_resource type="Texture2D" uid="uid://erj7fart7jky" path="res://grab_24.svg" id="8_ofwhf"]
 
 [node name="Room4" type="Node2D"]
+position = Vector2(681, 514)
 scale = Vector2(6, 6)
+metadata/_edit_group_ = true
 
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(-0.5, -0.666667)
-texture = ExtResource("1_rxhgl")
+texture = ExtResource("1_ikq6l")
 
 [node name="Folder" type="TextureButton" parent="Background"]
 offset_left = -87.0
 offset_top = 48.0
 offset_right = -11.0
 offset_bottom = 77.0
-script = ExtResource("2_yo1aw")
+script = ExtResource("2_7o15o")
 next_room_id = 3
 
 [node name="Headmaster" type="TextureButton" parent="Background"]
@@ -29,8 +31,8 @@ offset_left = -2.0
 offset_top = -40.0
 offset_right = 62.0
 offset_bottom = 32.0
-script = ExtResource("3_u034m")
-dialog_file = "res://Rooms/HeadMaster/headmaster.json"
+script = ExtResource("3_mukdi")
+dialog_file = "res://Rooms/HeadMasterOnOpen/headmaster.json"
 
 [node name="PencilHolder" type="TextureButton" parent="Background"]
 offset_left = 89.5
@@ -38,9 +40,9 @@ offset_top = -72.8333
 offset_right = 129.5
 offset_bottom = -32.8333
 scale = Vector2(0.374598, 0.507877)
-script = ExtResource("4_xqidq")
+script = ExtResource("4_4isak")
 description = "This is a pencil holder"
-overlay = ExtResource("5_eih2a")
+overlay = ExtResource("5_px7oh")
 
 [node name="PickupItem" type="TextureButton" parent="Background"]
 offset_left = -93.6667
@@ -48,8 +50,8 @@ offset_top = -66.1667
 offset_right = 34.3333
 offset_bottom = 61.8333
 scale = Vector2(0.695015, 0.285648)
-texture_normal = ExtResource("5_o1l45")
-script = ExtResource("6_uur28")
+texture_normal = ExtResource("6_21bho")
+script = ExtResource("7_o3wb4")
 set_flags_on_pickup = {
 "CAN_SEE_GLORBO": true,
 "CAN_SEE_GODOT": false,
@@ -60,12 +62,13 @@ visibility_flags = {
 }
 
 [node name="TextureButton" type="TextureButton" parent="Background"]
+visible = false
 offset_left = 70.0
 offset_top = 41.8333
 offset_right = 110.0
 offset_bottom = 81.8333
-texture_normal = ExtResource("7_4o8h6")
-script = ExtResource("6_uur28")
+texture_normal = ExtResource("8_ofwhf")
+script = ExtResource("7_o3wb4")
 
 [connection signal="mouse_entered" from="Background/Folder" to="Background/Folder" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Background/Folder" to="Background/Folder" method="_on_mouse_exited"]

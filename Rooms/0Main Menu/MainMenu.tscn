@@ -1,6 +1,15 @@
-[gd_scene format=3 uid="uid://bjmud580kf6yi"]
+[gd_scene load_steps=2 format=3 uid="uid://bjmud580kf6yi"]
+
+[ext_resource type="Script" path="res://scripts/move_action.gd" id="1_0ey7f"]
 
 [node name="HeadmasterOffice" type="Node2D"]
 
 [node name="BG" type="Sprite2D" parent="."]
 z_index = -1
+
+[node name="Start" type="TextureButton" parent="BG"]
+offset_left = 262.0
+offset_top = 153.0
+offset_right = 1116.0
+offset_bottom = 640.0
+script = ExtResource("1_0ey7f")

@@ -1,11 +1,9 @@
-[gd_scene load_steps=10 format=3 uid="uid://ug4plaxep8f1"]
+[gd_scene load_steps=8 format=3 uid="uid://ug4plaxep8f1"]
 
 [ext_resource type="Script" path="res://scripts/gamemanager.gd" id="1_m0qrl"]
 [ext_resource type="Script" path="res://scripts/rooms.gd" id="2_plwn1"]
-[ext_resource type="PackedScene" uid="uid://dqiyhtbex5bfs" path="res://Rooms/Room1/Room1.tscn" id="3_bsafd"]
-[ext_resource type="PackedScene" uid="uid://bwt04pbe02yvc" path="res://Rooms/HeadMaster/Room4.tscn" id="4_r3k27"]
-[ext_resource type="PackedScene" uid="uid://cpe460ngmlu2y" path="res://Rooms/Room2/Room2.tscn" id="4_wt6he"]
-[ext_resource type="PackedScene" uid="uid://c5cy8plttdff3" path="res://Rooms/Room3/Room3.tscn" id="5_21fij"]
+[ext_resource type="PackedScene" uid="uid://bjmud580kf6yi" path="res://Rooms/0Main Menu/MainMenu.tscn" id="3_nvk34"]
+[ext_resource type="PackedScene" uid="uid://bwt04pbe02yvc" path="res://Rooms/HeadMasterOnOpen/Room4.tscn" id="4_664kq"]
 [ext_resource type="Script" path="res://scripts/ui.gd" id="7_ssp2n"]
 [ext_resource type="Script" path="res://scripts/clock.gd" id="8_81sub"]
 
@@ -17,22 +15,7 @@ script = ExtResource("1_m0qrl")
 
 [node name="rooms" type="Node" parent="."]
 script = ExtResource("2_plwn1")
-scenes = Array[PackedScene]([ExtResource("3_bsafd"), ExtResource("4_wt6he"), ExtResource("5_21fij"), ExtResource("4_r3k27")])
-
-[node name="Room1" parent="rooms" instance=ExtResource("3_bsafd")]
-visible = false
-position = Vector2(1, -1)
-
-[node name="Room2" parent="rooms" instance=ExtResource("4_wt6he")]
-visible = false
-position = Vector2(35, 268)
-
-[node name="Room3" parent="rooms" instance=ExtResource("5_21fij")]
-visible = false
-
-[node name="Room4" parent="rooms" instance=ExtResource("4_r3k27")]
-position = Vector2(769, 559)
-scale = Vector2(7, 7)
+scenes = Array[PackedScene]([ExtResource("3_nvk34"), ExtResource("4_664kq")])
 
 [node name="ui" type="Node" parent="."]
 script = ExtResource("7_ssp2n")
