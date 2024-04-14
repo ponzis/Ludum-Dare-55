@@ -25,6 +25,8 @@ func _on_pressed():
 	set_events()
 	ui_manager.show_display_image()
 	ui_manager.display_image(overlay, description)
+	#set flags here
 
 func _on_overlay_clicked():
 	ui_manager.hide_display_image()
+	#Add Completion code here

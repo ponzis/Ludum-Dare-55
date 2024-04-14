@@ -8,11 +8,17 @@ extends TextureButton
 @export var crosshair:Resource = preload("res://crosshair_24.svg")
 @export var grab:Resource = preload("res://grab_24.svg")
 
+@export_range(0, 100) var action_cost: int = 5
+
+@export_group("Visibility Flags")
+
 @export var visibility_flags:= {}
 
 @export var visible_without_flag := true
 
-@export_range(0, 100) var action_cost: int = 5
+@export_group("Completion Flags")
+@export var flags_on_completion:= {}
+
 
 func check_conditions(flags:Dictionary,ignore_missing = true, return_if_met = true):#TODO: Rename to check flags?
 	if flags.is_empty() and ignore_missing:
@@ -93,3 +99,4 @@ func _on_room_update():
 	else:
 		print("HIDING")
 		self.hide()
+

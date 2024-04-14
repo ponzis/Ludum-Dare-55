@@ -24,11 +24,12 @@ script = ExtResource("3_o146b")
 dialog_file = "res://Rooms/Room3/glorbo/glorbo.json"
 crosshair = ExtResource("4_4kqgp")
 grab = ExtResource("5_cbwt2")
+action_cost = 5
 visibility_flags = {
 "CAN_SEE_GLORBO": true
 }
 visible_without_flag = false
-action_cost = 5
+flags_on_completion = {}
 
 [node name="MoveRoom" type="TextureButton" parent="."]
 offset_left = 791.0

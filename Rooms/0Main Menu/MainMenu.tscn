@@ -1,15 +1,35 @@
-[gd_scene load_steps=2 format=3 uid="uid://bjmud580kf6yi"]
+[gd_scene load_steps=5 format=3 uid="uid://bjmud580kf6yi"]
 
 [ext_resource type="Script" path="res://scripts/move_action.gd" id="1_0ey7f"]
+[ext_resource type="Texture2D" uid="uid://c0didi34qssci" path="res://Rooms/0Main Menu/MainMenuDoor.png" id="1_y8l4e"]
+[ext_resource type="FontFile" uid="uid://dkgplh7lafld" path="res://garbage.ttf" id="2_c2wj8"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_3wqdj"]
+font = ExtResource("2_c2wj8")
+font_size = 64
+font_color = Color(1, 0, 0, 1)
 
 [node name="HeadmasterOffice" type="Node2D"]
 
 [node name="BG" type="Sprite2D" parent="."]
 z_index = -1
+position = Vector2(720, 540)
+texture = ExtResource("1_y8l4e")
 
-[node name="Start" type="TextureButton" parent="BG"]
-offset_left = 262.0
-offset_top = 153.0
-offset_right = 1116.0
-offset_bottom = 640.0
+[node name="Title???" type="Label" parent="."]
+offset_left = 434.0
+offset_top = 138.0
+offset_right = 926.0
+offset_bottom = 202.0
+text = "The Summoning"
+label_settings = SubResource("LabelSettings_3wqdj")
+
+[node name="Start" type="TextureButton" parent="."]
+offset_left = 484.0
+offset_top = 222.0
+offset_right = 837.0
+offset_bottom = 961.0
 script = ExtResource("1_0ey7f")
+flags_on_completion = {
+"MAIN_MAN": true
+}
