@@ -6,11 +6,24 @@ extends TextureButton
 @export var crosshair:Resource = preload("res://crosshair_24.svg")
 @export var grab:Resource = preload("res://grab_24.svg")
 
+@export var visibility_flags:= {}
+
+
+func check_conditions(flags:Dictionary,ignore_missing = true):
+	for flag in flags.keys():
+		print(game_manager.game_flags[flag])
+
+
+
+
+
+
 var clickmask: BitMap = BitMap.new()
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	print("Item %s ready" % self.name)
+	check_conditions(visibility_flags)
 	Input.set_custom_mouse_cursor(crosshair)
 	make_clip_mask()
 	pass

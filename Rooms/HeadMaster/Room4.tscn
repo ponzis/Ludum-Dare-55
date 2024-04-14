@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://bwt04pbe02yvc"]
+[gd_scene load_steps=5 format=3 uid="uid://bwt04pbe02yvc"]
 
-[ext_resource type="Texture2D" uid="uid://c5vsf2lv7fbu5" path="res://Rooms/Room4/test2.png" id="1_rxhgl"]
+[ext_resource type="Texture2D" uid="uid://c5vsf2lv7fbu5" path="res://Rooms/HeadMaster/test2.png" id="1_rxhgl"]
 [ext_resource type="Script" path="res://scripts/move_action.gd" id="2_yo1aw"]
 [ext_resource type="Script" path="res://scripts/dialog_action.gd" id="3_u034m"]
+[ext_resource type="Script" path="res://scripts/event_item.gd" id="4_yd0rg"]
 
 [node name="Room4" type="Node2D"]
 scale = Vector2(6, 6)
@@ -26,6 +27,14 @@ offset_right = 62.0
 offset_bottom = 32.0
 script = ExtResource("3_u034m")
 dialog_file = "res://Rooms/Room4/headmaster.json"
+
+[node name="PencilHolder" type="TextureButton" parent="Background"]
+offset_left = 4.5
+offset_top = 28.3333
+offset_right = 44.5
+offset_bottom = 68.3333
+scale = Vector2(0.374598, 0.507877)
+script = ExtResource("4_yd0rg")
 
 [connection signal="mouse_entered" from="Background/Folder" to="Background/Folder" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Background/Folder" to="Background/Folder" method="_on_mouse_exited"]
