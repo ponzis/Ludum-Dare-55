@@ -14,7 +14,7 @@ func set_next_scene(index: int, start_loc: Vector2):
 	print('go to %s' % room_node_name)
 	
 	var next_room: Node2D = get_node_or_null(room_node_name)
-	if next_room == null:
+	if next_room == null or next_room.is_queued_for_deletion():
 		var next_scene = scenes[index-1]
 		next_room = next_scene.instantiate()
 		next_room.name = room_node_name

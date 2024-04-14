@@ -30,7 +30,6 @@ position = Vector2(35, 268)
 visible = false
 
 [node name="Room4" parent="rooms" instance=ExtResource("4_r3k27")]
-visible = false
 position = Vector2(769, 559)
 scale = Vector2(7, 7)
 
