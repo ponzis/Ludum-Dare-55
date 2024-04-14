@@ -45,10 +45,18 @@ func get_dialogue() -> Dictionary:
 	return json_object.get_data()
 
 func check_codnition(conditon):
+	if conditon is Array:
+		if conditon == []:
+			return true
+		for c in conditon:
+			if check_codnition(c):
+				return true
 	if conditon is String:
 		if conditon == "":
 			return true
 		return self.game_manager.game_flags.has(conditon)
+	if conditon is Object and self.game_manager.game_flags.has(conditon):
+		return self.game_manager.game_flags[conditon['key']] == conditon['value']  
 	return false
 
 func get_dialogue_tree(trees) -> Dictionary:
@@ -76,21 +84,25 @@ func set_events():
 	ui_manager.dialogue_clicked.connect(_on_dialogue_clicked)
 
 
-func set_dialogue_tree(dialogue_tree):
+func set_dialogue_tree(dialogue_tree) -> bool:
 	var tree = get_dialogue_tree(dialogue_tree)
 	state['tree'] = tree
 	
+	if tree == {}:
+		return false
+		
 	var resposnses = get_dialogue_responses(tree['response'])
 	state['resposnses'] = resposnses
 	
 	ui_manager.set_person_text(tree['text'])
 	ui_manager.set_person_resposnses(resposnses)
+	return true
 
 func start_dialog():
 	set_events()
-	ui_manager.show_dialoge()
-	ui_manager.set_person_name(dialogue['name'])
-	set_dialogue_tree(dialogue['tree'])
+	if(set_dialogue_tree(dialogue['tree'])):
+		ui_manager.set_person_name(dialogue['name'])
+		ui_manager.show_dialoge()
 
 
 func _on_pressed():

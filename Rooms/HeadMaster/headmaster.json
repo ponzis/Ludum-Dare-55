@@ -2,7 +2,7 @@
 	"name": "DR. GAY",
 	"tree": [
 		{
-			"condition": "",
+			"condition": [],
 			"text": "Will you love me?",
 			"response": [
 				{
