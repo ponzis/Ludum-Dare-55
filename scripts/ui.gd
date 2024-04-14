@@ -10,14 +10,14 @@ func set_person_name(person_name: String):
 
 
 func set_person_text(text: String):
-	var text_node: Label = get_node_or_null('Dialogue/Text')
+	var text_node: Label = get_node_or_null('Dialogue/Grid/Text')
 	text_node.text = text
 
 
 
 func set_person_resposnses(responses: Array):
 	for index in range(button_count):
-		var option_node_name =  'Dialogue/Text/Option_%d' % (index + 1)
+		var option_node_name =  'Dialogue/Grid/Option_%d' % (index + 1)
 		
 		if index < responses.size():
 			var option = responses[index]

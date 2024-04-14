@@ -1,7 +1,7 @@
 [gd_resource type="Theme" load_steps=2 format=3 uid="uid://c1h7ben211tw3"]
 
-[ext_resource type="FontFile" uid="uid://57n3l7eqgjsm" path="res://garbage.ttf" id="1_0a5c6"]
+[ext_resource type="FontFile" uid="uid://d23wb7pw2nut1" path="res://garbage.ttf" id="1_0a5c6"]
 
 [resource]
 default_font = ExtResource("1_0a5c6")
-default_font_size = 25
+default_font_size = 48
