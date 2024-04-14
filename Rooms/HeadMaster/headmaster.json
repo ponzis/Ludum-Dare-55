@@ -24,10 +24,14 @@
 							"response": [
 								{
 									"text": "No",
-									"effect": {
+									"effect": [{
 										"key": "MAKE_GAY_MAD",
 										"value": true
-									}
+									},
+									{
+										"key": "MAKE_GAY_HAPPY",
+										"value": false
+									}]
 								},
 								{
 									"text": "Yes",

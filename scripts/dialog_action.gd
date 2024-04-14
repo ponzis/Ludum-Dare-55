@@ -29,6 +29,12 @@ func _on_dialogue_clicked(option):
 	set_dialogue_tree(selected_response['tree'])
 
 func set_effect(effect):
+	if effect is Array:
+		for e in effect:
+			game_manager.game_flags[e['key']] = e['value']
+		print(game_manager.game_flags)
+		return
+			
 	game_manager.game_flags[effect['key']] = effect['value']
 	print(game_manager.game_flags)
 
