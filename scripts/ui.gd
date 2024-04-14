@@ -27,3 +27,15 @@ func set_person_resposnses(responses: Array):
 			continue
 		option_node.text = option['text']
 
+
+
+func _on_option_3_pressed():
+	pass # Replace with function body.
+
+
+func _on_option_2_pressed():
+	pass # Replace with function body.
+
+
+func _on_option_1_button_up():
+	pass # Replace with function body.

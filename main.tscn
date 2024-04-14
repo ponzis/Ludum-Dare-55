@@ -73,39 +73,43 @@ offset_bottom = 96.0
 grow_horizontal = 2
 text = "This is  the text"
 
-[node name="Option_1" type="Label" parent="ui/Dialogue/Text"]
+[node name="Option_1" type="Button" parent="ui/Dialogue/Text"]
 layout_mode = 0
 offset_top = 24.0
-offset_right = 149.0
-offset_bottom = 102.0
+offset_right = 199.0
+offset_bottom = 55.0
 text = "A"
 
-[node name="Option_2" type="Label" parent="ui/Dialogue/Text"]
+[node name="Option_2" type="Button" parent="ui/Dialogue/Text"]
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -58.0
-offset_top = -4.0
-offset_right = 140.0
-offset_bottom = 76.0
+offset_left = -228.0
+offset_top = 6.0
+offset_right = -30.0
+offset_bottom = 37.0
 grow_horizontal = 2
 grow_vertical = 0
 text = "B"
 
-[node name="Leave" type="Label" parent="ui/Dialogue/Text"]
+[node name="Option_3" type="Button" parent="ui/Dialogue/Text"]
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = 189.0
-offset_top = -4.0
-offset_right = 328.0
-offset_bottom = 87.0
+offset_left = -231.0
+offset_top = 38.0
+offset_right = -33.0
+offset_bottom = 69.0
 grow_horizontal = 2
 grow_vertical = 0
-text = "Leave"
+text = "C"
+
+[connection signal="button_up" from="ui/Dialogue/Text/Option_1" to="ui" method="_on_option_1_button_up"]
+[connection signal="pressed" from="ui/Dialogue/Text/Option_2" to="ui" method="_on_option_2_pressed"]
+[connection signal="pressed" from="ui/Dialogue/Text/Option_3" to="ui" method="_on_option_3_pressed"]
