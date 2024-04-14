@@ -1,0 +1,120 @@
+[gd_scene load_steps=9 format=3 uid="uid://ug4plaxep8f1"]
+
+[ext_resource type="Script" path="res://scripts/gamemanager.gd" id="1_m0qrl"]
+[ext_resource type="Script" path="res://scripts/rooms.gd" id="2_plwn1"]
+[ext_resource type="PackedScene" uid="uid://dqiyhtbex5bfs" path="res://Rooms/Room1/Room1.tscn" id="3_bsafd"]
+[ext_resource type="PackedScene" uid="uid://bwt04pbe02yvc" path="res://Rooms/HeadMaster/Room4.tscn" id="4_r3k27"]
+[ext_resource type="PackedScene" uid="uid://cpe460ngmlu2y" path="res://Rooms/Room2/Room2.tscn" id="4_wt6he"]
+[ext_resource type="PackedScene" uid="uid://c5cy8plttdff3" path="res://Rooms/Room3/Room3.tscn" id="5_21fij"]
+[ext_resource type="Script" path="res://scripts/ui.gd" id="7_ssp2n"]
+
+[sub_resource type="Theme" id="Theme_o07dl"]
+Fonts/fonts/large = null
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_m0qrl")
+
+[node name="rooms" type="Node" parent="."]
+script = ExtResource("2_plwn1")
+scenes = Array[PackedScene]([ExtResource("3_bsafd"), ExtResource("4_wt6he"), ExtResource("5_21fij"), ExtResource("4_r3k27")])
+
+[node name="Room1" parent="rooms" instance=ExtResource("3_bsafd")]
+visible = false
+position = Vector2(1, -1)
+
+[node name="Room2" parent="rooms" instance=ExtResource("4_wt6he")]
+visible = false
+position = Vector2(35, 268)
+
+[node name="Room3" parent="rooms" instance=ExtResource("5_21fij")]
+visible = false
+
+[node name="Room4" parent="rooms" instance=ExtResource("4_r3k27")]
+visible = false
+position = Vector2(769, 559)
+scale = Vector2(7, 7)
+
+[node name="ui" type="Node" parent="."]
+script = ExtResource("7_ssp2n")
+
+[node name="Dialogue" type="Control" parent="ui"]
+visible = false
+layout_mode = 3
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -200.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="ColorRect" type="ColorRect" parent="ui/Dialogue"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.156863, 0.156863, 0.156863, 0.619608)
+
+[node name="Name" type="Label" parent="ui/Dialogue"]
+layout_mode = 0
+offset_left = 400.0
+offset_top = 7.0
+offset_right = 447.0
+offset_bottom = 30.0
+theme = SubResource("Theme_o07dl")
+text = "NAME"
+
+[node name="Text" type="Label" parent="ui/Dialogue"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -229.0
+offset_top = 48.0
+offset_right = 229.0
+offset_bottom = 96.0
+grow_horizontal = 2
+text = "This is  the text"
+
+[node name="Option_1" type="Button" parent="ui/Dialogue/Text"]
+layout_mode = 0
+offset_top = 24.0
+offset_right = 199.0
+offset_bottom = 55.0
+text = "A"
+
+[node name="Option_2" type="Button" parent="ui/Dialogue/Text"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -228.0
+offset_top = 6.0
+offset_right = -30.0
+offset_bottom = 37.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "B"
+
+[node name="Option_3" type="Button" parent="ui/Dialogue/Text"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -231.0
+offset_top = 38.0
+offset_right = -33.0
+offset_bottom = 69.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "C"
+
+[connection signal="button_up" from="ui/Dialogue/Text/Option_1" to="ui" method="_on_option_1_button_up"]
+[connection signal="pressed" from="ui/Dialogue/Text/Option_2" to="ui" method="_on_option_2_pressed"]
+[connection signal="pressed" from="ui/Dialogue/Text/Option_3" to="ui" method="_on_option_3_pressed"]
