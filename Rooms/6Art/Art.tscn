@@ -1,6 +1,19 @@
-[gd_scene format=3 uid="uid://c44ubdp0f63jn"]
+[gd_scene load_steps=3 format=3 uid="uid://c44ubdp0f63jn"]
 
-[node name="Science" type="Node2D"]
+[ext_resource type="Texture2D" uid="uid://cov2eq0tkv4bm" path="res://Rooms/6Art/ArtRoom.png" id="1_hohhh"]
+[ext_resource type="PackedScene" uid="uid://cpgbcm76qessk" path="res://back_button.tscn" id="2_sbyg4"]
+
+[node name="Art" type="Node2D"]
 
 [node name="BG" type="Sprite2D" parent="."]
 z_index = -1
+position = Vector2(720, 540)
+texture = ExtResource("1_hohhh")
+
+[node name="BackButton" parent="." instance=ExtResource("2_sbyg4")]
+offset_left = 635.0
+offset_top = 985.0
+offset_right = 829.0
+offset_bottom = 1045.0
+next_room_id = 13
+is_door = true

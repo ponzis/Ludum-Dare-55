@@ -28,3 +28,5 @@ offset_bottom = 396.0
 scale = Vector2(6.70126, 13.1038)
 script = ExtResource("3_sf5o3")
 next_room_id = 8
+is_door = true
+play_audio = true

@@ -17,6 +17,7 @@ offset_right = 713.0
 offset_bottom = 535.0
 script = ExtResource("2_l773p")
 next_room_id = 4
+play_audio = true
 
 [node name="Left" type="TextureButton" parent="BG"]
 offset_left = -714.0
@@ -25,3 +26,4 @@ offset_right = -515.0
 offset_bottom = 543.0
 script = ExtResource("2_l773p")
 next_room_id = 5
+play_audio = true

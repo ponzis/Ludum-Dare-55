@@ -20,6 +20,7 @@ offset_bottom = 1044.0
 texture_normal = ExtResource("2_5uw44")
 script = ExtResource("3_73hs0")
 next_room_id = 18
+play_audio = true
 
 [node name="Forward" type="TextureButton" parent="."]
 offset_left = 307.0
@@ -29,6 +30,7 @@ offset_bottom = 298.0
 scale = Vector2(6.70126, 13.1038)
 script = ExtResource("3_73hs0")
 next_room_id = 17
+play_audio = true
 
 [node name="SocalScience" type="TextureButton" parent="."]
 offset_left = 104.0
@@ -39,3 +41,4 @@ scale = Vector2(6.70126, 13.1038)
 script = ExtResource("3_73hs0")
 next_room_id = 28
 is_door = true
+play_audio = true

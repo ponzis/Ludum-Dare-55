@@ -11,7 +11,9 @@ func _ready():
 		grab= preload("res://Exit.svg")
 		if play_audio and audio_stream == null:
 			audio_stream = AudioStreamRandomizer.new()
-			audio_stream.add_stream(-1,preload("res://Audio/come in.wav"))
+			audio_stream.add_stream(-1,preload("res://Audio/door1_crush.wav"))
+			audio_stream.add_stream(-1,preload("res://Audio/door2_crush.wav"))
+			audio_stream.add_stream(-1,preload("res://Audio/door_creak_slamcrush.wav"))
 			init_audio_player()
 
 	else:
@@ -21,6 +23,7 @@ func _ready():
 			audio_stream.add_stream(-1,preload("res://Audio/feet_crush.wav"))
 			audio_stream.add_stream(-1,preload("res://Audio/feet_crush2.wav"))
 			audio_stream.add_stream(-1,preload("res://Audio/feet_crush3.wav"))
+			#audio_stream.random_volume_offset_db=-400.0 Not sure if this accepts the volume as negativre..
 			init_audio_player()
 			
 	pressed.connect(_on_pressed)

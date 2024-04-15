@@ -22,6 +22,7 @@ next_room_id = 3
 visibility_flags = {
 "OUT_OF_TIME": false
 }
+play_audio = true
 
 [node name="HeadMasterDialogueThroughDoor" type="TextureButton" parent="."]
 offset_left = 486.0

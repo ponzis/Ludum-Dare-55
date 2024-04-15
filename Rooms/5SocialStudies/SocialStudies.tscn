@@ -21,9 +21,11 @@ offset_bottom = 1046.0
 texture_normal = ExtResource("2_q0dws")
 script = ExtResource("3_ue60s")
 next_room_id = 16
+is_door = true
 visibility_flags = {
 "OUT_OF_TIME": false
 }
+play_audio = true
 
 [node name="Teacher" type="TextureButton" parent="."]
 offset_left = 51.0

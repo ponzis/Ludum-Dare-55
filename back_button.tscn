@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cpgbcm76qessk"]
+
+[ext_resource type="Texture2D" uid="uid://cifef12mqi0kw" path="res://BackOutbutton.png" id="1_egi11"]
+[ext_resource type="Script" path="res://scripts/move_action.gd" id="2_7bb0q"]
+
+[node name="BackButton" type="TextureButton"]
+offset_right = 40.0
+offset_bottom = 40.0
+texture_normal = ExtResource("1_egi11")
+script = ExtResource("2_7bb0q")
+play_audio = true

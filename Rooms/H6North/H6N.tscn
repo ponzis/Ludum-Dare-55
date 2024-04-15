@@ -20,6 +20,7 @@ offset_bottom = 1033.0
 texture_normal = ExtResource("2_psjrb")
 script = ExtResource("3_jboxb")
 next_room_id = 15
+play_audio = true
 
 [node name="Forward" type="TextureButton" parent="."]
 offset_left = 660.0
@@ -29,3 +30,4 @@ offset_bottom = 533.0
 scale = Vector2(6.70126, 13.1038)
 script = ExtResource("3_jboxb")
 next_room_id = 3
+play_audio = true
