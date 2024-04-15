@@ -1,0 +1,152 @@
+{
+	"name": "Mr. Teacher",
+	"tree": [
+        {
+			"condition": "TALK_TO_TACHER",
+			"text": "Don't you have something to do?",
+			"response": [
+				{
+					"text": "[leave]"
+				}
+			]
+		},
+		{
+			"condition": "HAS_FILE",
+			"text": "Oh, it's you.",
+			"response": [
+				{
+					"text": "I'm here for Susie",
+                    "tree": [
+                        {
+                            "text": "Sure you are. She WAS studying, but just left.",
+                            "response": [
+                                {
+                                    "text": "Where?",
+                                    "tree": [
+                                        {
+                                            "text": "I sent her to English class because she was getting nothing done in here",
+                                            "response": [
+                                                {
+                                                    "text": "[continue]",
+                                                    "tree": [
+                                                        {
+                                                            "text": "She just kept doodling",
+                                                            "response": [
+                                                                {
+                                                                    "text": "Where's English?",
+                                                                    "tree": [
+                                                                        {
+                                                                            "text": "It's blah blah blah (idk it's not decided yet)",
+                                                                            "response": [
+                                                                                {
+                                                                                    "text": "[leave]",
+                                                                                    "effect": {
+                                                                                        "key": "TALK_TO_TACHER",
+                                                                                        "value": true
+                                                                                    }
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "text": "Why",
+                                    "tree": [
+                                        {
+                                            "text": "She wasn't getting anything done",
+                                            "response": [
+                                                {
+                                                    "text": "[continue]",
+                                                    "tree": [
+                                                        {
+                                                            "text": "She was just getting frustrated and doodling",
+                                                            "response": [
+                                                                {
+                                                                    "text": "Why was she frustrated?",
+                                                                    "tree": [
+                                                                        {
+                                                                            "text": "Well, she started screaming about how she's failing multiple classes as she ran out of the room.",
+                                                                            "response": [
+                                                                                {
+                                                                                    "text": "[continue]",
+                                                                                    "tree": [
+                                                                                        {
+                                                                                            "text": "Speaking of, you're failing too. Shouldn't you be studying?",
+                                                                                            "response": [
+                                                                                                {
+                                                                                                    "text": "[leave]",
+                                                                                                    "effect": {
+                                                                                                        "key": "TALK_TO_TACHER",
+                                                                                                        "value": true
+                                                                                                    }
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "text": "Why was she doodling?",
+                                                                    "tree": [
+                                                                        {
+                                                                            "text": "She always draws when she's upset.",
+                                                                            "response": [
+                                                                                {
+                                                                                    "text": "[continue]",
+                                                                                    "tree": [
+                                                                                        {
+                                                                                            "text": "Even though I tell her should wouldn't be stressed if she just did the work.",
+                                                                                            "response": [
+                                                                                                {
+                                                                                                    "text": "[continue]",
+                                                                                                    "tree": [
+                                                                                                        {
+                                                                                                            "text": "She's probably I'm the art room right now, wasting her time.",
+                                                                                                            "response": [
+                                                                                                                {
+                                                                                                                    "text": "[leave]",
+                                                                                                                    "effect": {
+                                                                                                                        "key": "TALK_TO_TACHER",
+                                                                                                                        "value": true
+                                                                                                                    }
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

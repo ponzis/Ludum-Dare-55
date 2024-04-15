@@ -6,7 +6,7 @@
 			"text": "Go do your task",
 			"response": [
 				{
-					"text": "[continue]"
+					"text": "[leave]"
 				}
 			]
 		},
@@ -80,7 +80,7 @@
 																																															"text": "Have them here by 11:30, lunch time.",
 																																															"response": [
 																																																{
-																																																	"text": "[continue]",
+																																																	"text": "[leave]",
 																																																	"effect": {
 																																																		"key": "TALK_TO_HEADMASTER",
 																																																		"value": true
