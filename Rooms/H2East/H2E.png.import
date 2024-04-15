@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b258ltknlw6da"
-path="res://.godot/imported/WINNDOW.png-b84335ee4ccee53f7a962e79bd2e6605.ctex"
+uid="uid://b7iokm8nuwiym"
+path="res://.godot/imported/H2E.png-90fcf5418083e8ca0f180c00353eedc8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Rooms/TestSpace/WINNDOW.png"
-dest_files=["res://.godot/imported/WINNDOW.png-b84335ee4ccee53f7a962e79bd2e6605.ctex"]
+source_file="res://Rooms/H2East/H2E.png"
+dest_files=["res://.godot/imported/H2E.png-90fcf5418083e8ca0f180c00353eedc8.ctex"]
 
 [params]
 

@@ -13,10 +13,10 @@ texture = ExtResource("1_uqxs8")
 flip_h = true
 
 [node name="Back" type="TextureButton" parent="."]
-offset_left = 615.0
-offset_top = 865.0
-offset_right = 815.0
-offset_bottom = 1065.0
+offset_left = 617.0
+offset_top = 984.0
+offset_right = 817.0
+offset_bottom = 1048.0
 texture_normal = ExtResource("2_60rpd")
 script = ExtResource("3_0sjre")
 next_room_id = 20

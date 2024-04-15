@@ -12,10 +12,10 @@ position = Vector2(720, 540)
 texture = ExtResource("1_3nsbs")
 
 [node name="BackToHallway Room3" type="TextureButton" parent="."]
-offset_left = 562.0
-offset_top = 859.0
-offset_right = 776.0
-offset_bottom = 1059.0
+offset_left = 564.0
+offset_top = 997.0
+offset_right = 760.0
+offset_bottom = 1060.0
 texture_normal = ExtResource("2_41ffu")
 script = ExtResource("3_kxice")
 next_room_id = 3

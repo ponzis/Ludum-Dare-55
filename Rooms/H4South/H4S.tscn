@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://vpfsoawehqtn"]
 
-[ext_resource type="Texture2D" uid="uid://deqj6senpxr00" path="res://Rooms/H4South/20240413_133453croppedtest.png" id="1_wctjf"]
+[ext_resource type="Texture2D" uid="uid://deqj6senpxr00" path="res://Rooms/H4South/H4S.png" id="1_x2vdy"]
 [ext_resource type="Texture2D" uid="uid://cifef12mqi0kw" path="res://BackOutbutton.png" id="2_4k1td"]
 [ext_resource type="Script" path="res://scripts/move_action.gd" id="3_hdcxl"]
 
@@ -9,16 +9,16 @@
 [node name="BG" type="Sprite2D" parent="."]
 z_index = -1
 position = Vector2(720, 540)
-texture = ExtResource("1_wctjf")
+texture = ExtResource("1_x2vdy")
 
 [node name="Back" type="TextureButton" parent="."]
-offset_left = 615.0
-offset_top = 865.0
-offset_right = 815.0
-offset_bottom = 1065.0
+offset_left = 576.0
+offset_top = 977.0
+offset_right = 776.0
+offset_bottom = 1041.0
 texture_normal = ExtResource("2_4k1td")
 script = ExtResource("3_hdcxl")
-next_room_id = 11
+next_room_id = 9
 
 [node name="Forward" type="TextureButton" parent="."]
 offset_left = 628.0

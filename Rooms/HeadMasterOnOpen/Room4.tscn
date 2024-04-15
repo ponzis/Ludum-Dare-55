@@ -52,10 +52,10 @@ flags_on_completion = {
 }
 
 [node name="BackOutofRoom" type="TextureButton" parent="Background"]
-offset_left = 13.5
-offset_top = 38.1667
-offset_right = 213.5
-offset_bottom = 238.167
+offset_left = 13.3333
+offset_top = 67.0
+offset_right = 213.333
+offset_bottom = 129.0
 scale = Vector2(0.2, 0.2)
 texture_normal = ExtResource("8_lo3r7")
 script = ExtResource("2_7o15o")
