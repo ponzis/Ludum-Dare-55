@@ -1,11 +1,31 @@
-[gd_scene load_steps=2 format=3 uid="uid://cosxhtbku33qj"]
+[gd_scene load_steps=4 format=3 uid="uid://cosxhtbku33qj"]
 
-[ext_resource type="Texture2D" uid="uid://bewsatrhgbfaj" path="res://Rooms/H3West/H3Wjdoorpg.jpg" id="1_4uwdb"]
+[ext_resource type="Texture2D" uid="uid://bdxh3ec40inyv" path="res://Rooms/H1West/H1Wjdoorpg.png" id="1_iahn6"]
+[ext_resource type="Texture2D" uid="uid://cifef12mqi0kw" path="res://BackOutbutton.png" id="2_03ccl"]
+[ext_resource type="Script" path="res://scripts/move_action.gd" id="3_ffdkp"]
 
 [node name="H1W" type="Node2D"]
 
 [node name="BG" type="Sprite2D" parent="."]
 z_index = -1
-position = Vector2(735, 559)
-scale = Vector2(0.351923, 0.348077)
-texture = ExtResource("1_4uwdb")
+position = Vector2(716, 540)
+scale = Vector2(5, 5)
+texture = ExtResource("1_iahn6")
+
+[node name="Back" type="TextureButton" parent="."]
+offset_left = 615.0
+offset_top = 865.0
+offset_right = 815.0
+offset_bottom = 1065.0
+texture_normal = ExtResource("2_03ccl")
+script = ExtResource("3_ffdkp")
+next_room_id = 13
+
+[node name="Forward" type="TextureButton" parent="."]
+offset_left = 605.0
+offset_top = 385.0
+offset_right = 634.0
+offset_bottom = 399.0
+scale = Vector2(6.70126, 13.1038)
+script = ExtResource("3_ffdkp")
+next_room_id = 26

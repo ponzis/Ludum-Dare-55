@@ -1,10 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://dxfdscm00qxcq"]
+[gd_scene load_steps=5 format=3 uid="uid://dxfdscm00qxcq"]
 
 [ext_resource type="Texture2D" uid="uid://cj660y3st6xef" path="res://Rooms/1HeadMastersOffice/DSC_0630cropped.png" id="1_36poa"]
 [ext_resource type="Script" path="res://scripts/dialog_action.gd" id="2_2da6a"]
 [ext_resource type="Texture2D" uid="uid://8mvjydx67dm2" path="res://SpeakCursor.svg" id="3_c153e"]
 [ext_resource type="Script" path="res://scripts/move_action.gd" id="4_wk8d3"]
-[ext_resource type="Texture2D" uid="uid://uarkxd6dxkd5" path="res://InspectCursor.svg" id="5_w1bry"]
 
 [node name="HeadmasterOffice" type="Node2D"]
 
@@ -28,4 +27,3 @@ offset_top = 961.0
 offset_right = 879.0
 offset_bottom = 1015.0
 script = ExtResource("4_wk8d3")
-grab = ExtResource("5_w1bry")

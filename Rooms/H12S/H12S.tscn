@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://iry0r81trwui"]
+[gd_scene load_steps=4 format=3 uid="uid://iry0r81trwui"]
 
 [ext_resource type="Texture2D" uid="uid://ctvwrcspk81a2" path="res://Rooms/H12S/H12S.png" id="1_a8cof"]
+[ext_resource type="Texture2D" uid="uid://cifef12mqi0kw" path="res://BackOutbutton.png" id="2_d4dqk"]
+[ext_resource type="Script" path="res://scripts/move_action.gd" id="3_v4lb3"]
 
 [node name="H12S" type="Node2D"]
 
@@ -8,3 +10,21 @@
 z_index = -1
 position = Vector2(718, 542)
 texture = ExtResource("1_a8cof")
+
+[node name="Back" type="TextureButton" parent="."]
+offset_left = 615.0
+offset_top = 865.0
+offset_right = 815.0
+offset_bottom = 1065.0
+texture_normal = ExtResource("2_d4dqk")
+script = ExtResource("3_v4lb3")
+next_room_id = 12
+
+[node name="Forward" type="TextureButton" parent="."]
+offset_left = 582.0
+offset_top = 530.0
+offset_right = 600.0
+offset_bottom = 539.0
+scale = Vector2(6.70126, 13.1038)
+script = ExtResource("3_v4lb3")
+next_room_id = 24
