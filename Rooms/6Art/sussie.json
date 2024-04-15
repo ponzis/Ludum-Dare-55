@@ -1,0 +1,171 @@
+{
+	"name": "Sussie",
+	"tree": [
+		{
+			"condition": [
+				{
+					"key": "TALK_TO_SUSSIE",
+					"value": true
+				},
+				{
+					"key": "HAS_ART_KIT",
+					"value": true
+				}
+			],
+			"text": "...",
+			"response": [
+				{
+					"text": "I got the art supplies.",
+					"tree":[
+						{
+							"text": "thanks for finding that for me",
+							"response": [
+								{
+									"text": "[continue]",
+									"tree":[
+										{
+											"text": "*sigh* sure I'll go with you.",
+											"response": [
+												{
+													"text": "[leave]",
+													"effect": [
+														{
+														"key": "HAS_SUSSIE",
+														"value": true
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"condition": [{
+				"key": "TALK_TO_SUSSIE",
+				"value": true
+			}],
+			"text": "Can you go already?",
+			"response": [
+				{
+					"text": "[leave]"
+				}
+			]
+		},
+		{
+			"text": "...",
+			"response": [
+				{
+					"text": "Are you susie?",
+					"tree": [
+						{
+							"text": "Who's asking?",
+							"response": [
+								{
+									"text": "The principal. He wants me to bring you to him.",
+									"tree": [
+										{
+											"text": "No way, loser. I'm busy looking for my stuff anyways.",
+											"response": [
+												{
+													"text": "You don't look busy…",
+													"tree": [
+														{
+															"text": "Yeah sure, like you have anything better to do.",
+															"response": [
+																{
+																	"text": "[leave]",
+																	"effect": {
+																		"key": "TALK_TO_SUSSIE",
+																		"value": true
+																	}
+																}
+															]
+														}
+													]
+												},
+												{
+													"text": "What are you looking for?",
+													"tree": [
+														{
+															"condition": "HAS_ART_KIT",
+															"text": "Yeah, all of my art supplies. They might be in my home room but I'm not allowed back in",
+															"response": [
+																{
+																	"text": "I have them here.",
+																	"tree": [
+																		{
+																			"text": "Oh, uh, ok. It's weird that you had these, but, thanks?",
+																			"response": [
+																				{
+																					"text": "[continue]",
+																					"tree": [
+																						{
+																							"text": "I guess I'll come with you.",
+																							"response": [
+																								{
+																									"text": "[leave]",
+																									"effect": [
+																										{
+																										"key": "TALK_TO_SUSSIE",
+																										"value": true
+																										},
+																										{
+																										"key": "HAS_SUSSIE",
+																										"value": true
+																										}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														},
+														{
+															"text": "Yeah, all of my art supplies. They might be in my home room but I'm not allowed back in",
+															"response": [
+																{
+																	"text": "I'll get them for you.",
+																	"tree": [
+																		{
+																			"text": "...",
+																			"response": [
+																				{
+																					"text": "[leave]",
+																					"effect": [
+																						{
+																						"key": "TALK_TO_SUSSIE",
+																						"value": true
+																						}
+																					]
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

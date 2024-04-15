@@ -2,6 +2,15 @@
 	"name": "Dr. Headmaster",
 	"tree": [
 		{
+			"condition": "FOUND_SUSSIE",
+			"text": "Come in",
+			"response": [
+				{
+					"text": "[end]"
+				}
+			]
+		},
+		{
 			"condition": "TALK_TO_HEADMASTER",
 			"text": "Go do your task",
 			"response": [

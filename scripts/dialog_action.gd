@@ -48,6 +48,9 @@ func set_effect(effect):
 	print(game_manager.game_flags)
 
 func get_dialogue() -> Dictionary:
+	if dialog_file == null or dialog_file == "":
+		return {}
+	
 	var file = FileAccess.open(dialog_file, FileAccess.READ)
 	var json_object = JSON.new()
 	json_object.parse(file.get_as_text())
@@ -58,14 +61,19 @@ func check_codnition(conditon):
 		if conditon == []:
 			return true
 		for c in conditon:
-			if check_codnition(c):
-				return true
+			if !check_codnition(c):
+				return false
+		return true
 	if conditon is String:
 		if conditon == "":
 			return true
 		return self.game_manager.game_flags.has(conditon)
-	if conditon is Object and self.game_manager.game_flags.has(conditon):
-		return self.game_manager.game_flags[conditon['key']] == conditon['value']  
+	if conditon is Dictionary:
+		var key = conditon['key']
+		var value = conditon['value']
+		var flags = self.game_manager.game_flags
+		if self.game_manager.game_flags.has(key):
+			return flags[key] == value
 	return false
 
 func get_dialogue_tree(trees) -> Dictionary:
