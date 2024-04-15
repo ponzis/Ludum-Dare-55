@@ -22,6 +22,9 @@
                             "response": [
                                 {
                                     "text": "Where?",
+                                    "effect": {
+                                        "time_cost": 5
+                                    },
                                     "tree": [
                                         {
                                             "text": "I sent her to English class because she was getting nothing done in here",
@@ -59,6 +62,9 @@
                                 },
                                 {
                                     "text": "Why",
+                                    "effect": {
+                                        "time_cost": 5
+                                    },
                                     "tree": [
                                         {
                                             "text": "She wasn't getting anything done",
@@ -71,6 +77,9 @@
                                                             "response": [
                                                                 {
                                                                     "text": "Why was she frustrated?",
+                                                                    "effect": {
+                                                                        "time_cost": 5
+                                                                    },
                                                                     "tree": [
                                                                         {
                                                                             "text": "Well, she started screaming about how she's failing multiple classes as she ran out of the room.",
@@ -98,6 +107,9 @@
                                                                 },
                                                                 {
                                                                     "text": "Why was she doodling?",
+                                                                    "effect": {
+                                                                        "time_cost": 5
+                                                                    },
                                                                     "tree": [
                                                                         {
                                                                             "text": "She always draws when she's upset.",
