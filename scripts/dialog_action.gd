@@ -32,11 +32,19 @@ func _on_dialogue_clicked(option):
 func set_effect(effect):
 	if effect is Array:
 		for e in effect:
-			game_manager.game_flags[e['key']] = e['value']
+			set_effect(e)
 		print(game_manager.game_flags)
 		return
-			
-	game_manager.game_flags[effect['key']] = effect['value']
+	
+	if effect.has('key') and effect.has('value'):	
+		game_manager.game_flags[effect['key']] = effect['value']
+		
+	if effect.has('key'):	
+		game_manager.game_flags[effect['key']] = true
+		
+	if effect.has('time_cost'):	
+		game_manager.time_elapsed(effect['time_cost'])
+		
 	print(game_manager.game_flags)
 
 func get_dialogue() -> Dictionary:

@@ -12,7 +12,7 @@
 [ext_resource type="Script" path="res://scripts/clock.gd" id="8_81sub"]
 [ext_resource type="PackedScene" uid="uid://y73op4q28ody" path="res://Rooms/7EndingScene/EndingScene.tscn" id="8_hcxlo"]
 [ext_resource type="PackedScene" uid="uid://vpfsoawehqtn" path="res://Rooms/H4South/H4S.tscn" id="9_72j2c"]
-[ext_resource type="PackedScene" uid="uid://y71pyq3oy31m" path="res://Rooms/H6North/H6N.tscn" id="10_al8cu"]
+[ext_resource type="PackedScene" path="res://Rooms/H6North/H6N.tscn" id="10_al8cu"]
 [ext_resource type="PackedScene" uid="uid://cosxhtbku33qj" path="res://Rooms/H1West/H1W.tscn" id="11_haps5"]
 [ext_resource type="PackedScene" uid="uid://dhos4gs3f5yde" path="res://Rooms/H2West/H2W.tscn" id="12_pnhf3"]
 [ext_resource type="PackedScene" uid="uid://oi0o0ixger4i" path="res://Rooms/H3West/H3W.tscn" id="13_txtjc"]
