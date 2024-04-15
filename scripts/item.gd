@@ -33,7 +33,6 @@ func check_conditions(flags:Dictionary,ignore_missing = true, return_if_met = tr
 	else:
 		for flag in flags.keys():
 			print(flag)
-			var da = game_manager.game_flags
 			if game_manager.game_flags.has(flag):
 				if game_manager.game_flags[flag] == flags[flag]:
 					print("THISIS TRUE!")

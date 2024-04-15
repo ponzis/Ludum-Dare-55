@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://ug4plaxep8f1"]
+[gd_scene load_steps=36 format=3 uid="uid://ug4plaxep8f1"]
 
 [ext_resource type="Script" path="res://scripts/gamemanager.gd" id="1_m0qrl"]
 [ext_resource type="Script" path="res://scripts/rooms.gd" id="2_plwn1"]
@@ -34,6 +34,7 @@
 [ext_resource type="PackedScene" uid="uid://dm3wxvnukvbqr" path="res://Rooms/4Math/Math.tscn" id="29_1tkwf"]
 [ext_resource type="PackedScene" uid="uid://j01hvppvpowa" path="res://Rooms/5SocialStudies/SocialStudies.tscn" id="30_nrloj"]
 [ext_resource type="PackedScene" uid="uid://c44ubdp0f63jn" path="res://Rooms/6Art/Art.tscn" id="31_ml3lu"]
+[ext_resource type="Script" path="res://scripts/game_end.gd" id="35_2eets"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_m0qrl")
@@ -149,6 +150,9 @@ offset_bottom = -17.0
 grow_horizontal = 2
 grow_vertical = 0
 horizontal_alignment = 1
+
+[node name="GameEnd" type="Node" parent="."]
+script = ExtResource("35_2eets")
 
 [connection signal="button_up" from="ui/Dialogue/Grid/Option_1" to="ui" method="_on_option_1_button_up"]
 [connection signal="pressed" from="ui/Dialogue/Grid/Option_2" to="ui" method="_on_option_2_pressed"]
