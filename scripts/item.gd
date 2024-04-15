@@ -19,6 +19,11 @@ extends TextureButton
 @export_group("Completion Flags")
 @export var flags_on_completion:= {}
 
+@export_group("Audio")
+@export var play_audio := false
+@export var audio_stream : AudioStream
+var audio_player : AudioStreamPlayer
+
 var uilock: bool
 
 func check_conditions(flags:Dictionary,ignore_missing = true, return_if_met = true):#TODO: Rename to check flags?
@@ -53,7 +58,14 @@ var clickmask: BitMap = BitMap.new()
 
 # Called when the node enters the scene tree for the first time.
 func _ready():#Onready overwrites the parents on ready
-	print("Bepis")
+	
+	if play_audio:
+		init_audio_player()
+		#audio_player= AudioStreamPlayer.new()
+		#add_child(audio_player)
+		#audio_player.stream = audio_stream
+		
+	
 	mouse_entered.connect(_on_mouse_entered)
 	mouse_exited.connect(_on_mouse_exited)
 	
@@ -110,3 +122,11 @@ func _on_game_flags_update():
 func _on_room_update():
 	set_visability()
 
+func play_audio_stream():
+	if audio_player != null:
+		audio_player.play()
+
+func init_audio_player():
+	audio_player= AudioStreamPlayer.new()
+	add_child(audio_player)
+	audio_player.stream = audio_stream

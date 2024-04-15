@@ -67,6 +67,7 @@ visible_without_flag = false
 flags_on_completion = {
 "SUCCESS": false
 }
+play_audio = true
 
 [connection signal="mouse_entered" from="Background/Headmaster" to="Background/Headmaster" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Background/Headmaster" to="Background/Headmaster" method="_on_mouse_exited"]
