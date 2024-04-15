@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://bwt04pbe02yvc"]
+[gd_scene load_steps=8 format=3 uid="uid://bwt04pbe02yvc"]
 
 [ext_resource type="Texture2D" uid="uid://c5vsf2lv7fbu5" path="res://Rooms/HeadMasterOnOpen/test2.png" id="1_ikq6l"]
 [ext_resource type="Script" path="res://scripts/move_action.gd" id="2_7o15o"]
 [ext_resource type="Texture2D" uid="uid://8mvjydx67dm2" path="res://SpeakCursor.svg" id="3_ijmvr"]
 [ext_resource type="Script" path="res://scripts/dialog_action.gd" id="3_mukdi"]
 [ext_resource type="Script" path="res://scripts/display_item.gd" id="4_4isak"]
+[ext_resource type="Texture2D" uid="uid://bsr351cuvdixm" path="res://Rooms/HeadMasterOnOpen/Susiesfile1.png" id="5_mma3q"]
 [ext_resource type="Texture2D" uid="uid://cifef12mqi0kw" path="res://BackOutbutton.png" id="8_lo3r7"]
 
 [node name="Room4" type="Node2D"]
@@ -20,6 +21,7 @@ offset_left = -2.0
 offset_top = -40.0
 offset_right = 62.0
 offset_bottom = 32.0
+scale = Vector2(0.997732, 0.986871)
 script = ExtResource("3_mukdi")
 dialog_file = "res://Rooms/HeadMasterOnOpen/headmaster.json"
 grab = ExtResource("3_ijmvr")
@@ -40,7 +42,12 @@ offset_right = 17.0
 offset_bottom = 144.0
 scale = Vector2(0.695015, 0.285648)
 script = ExtResource("4_4isak")
-description = "This is a folder"
+description = "The file"
+overlay = ExtResource("5_mma3q")
+visibility_flags = {
+"TALK_TO_HEADMASTER": true
+}
+visible_without_flag = false
 
 [node name="BackOutofRoom" type="TextureButton" parent="Background"]
 offset_left = 13.5

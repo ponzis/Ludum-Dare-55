@@ -1,44 +1,130 @@
 {
-	"name": "DR. GAY",
+	"name": "Dr. Headmaster",
 	"tree": [
 		{
-			"condition": [],
-			"text": "Will you love me?",
+			"condition": "TALK_TO_HEADMASTER",
+			"text": "Go do your task",
 			"response": [
 				{
-					"text": "No",
-					"effect": {
-						"key": "MAKE_GAY_MAD",
-						"value": true
-					}
-				},
+					"text": "[continue]"
+				}
+			]
+		},
+		{
+			"text": "Come in",
+			"response": [
 				{
-					"text": "Yes",
-					"effect": {
-						"key": "MAKE_GAY_HAPPY",
-						"value": true
-					},
+					"text": "[continue]",
 					"tree": [
 						{
-							"text": "Really?",
+							"text": "I've summoned you here today because your grades have dropped…",
 							"response": [
 								{
-									"text": "No",
-									"effect": [{
-										"key": "MAKE_GAY_MAD",
-										"value": true
-									},
-									{
-										"key": "MAKE_GAY_HAPPY",
-										"value": false
-									}]
-								},
-								{
-									"text": "Yes",
-									"effect": {
-										"key": "MAKE_GAY_HAPPY",
-										"value": true
-									}
+									"text": "[continue]",
+									"tree": [
+										{
+											"text": "You're absent more often than you're here",
+											"response": [
+												{
+													"text": "[continue]",
+													"tree": [
+														{
+															"text": "And You've started 2 fights in the past month.",
+															"response": [
+																{
+																	"text": "[continue]",
+																	"tree": [
+																		{
+																			"text": "…",
+																			"response": [
+																				{
+																					"text": "[continue]",
+																					"tree": [
+																						{
+																							"text": "But…",
+																							"response": [
+																								{
+																									"text": "[continue]",
+																									"tree": [
+																										{
+																											"text": "I've decided to give you a second chance.",
+																											"response": [
+																												{
+																													"text": "[continue]",
+																													"tree": [
+																														{
+																															"text": "I'm going to allow you do a little work for me.",
+																															"response": [
+																																{
+																																	"text": "[continue]",
+																																	"tree": [
+																																		{
+																																			"text": "I need you to go fetch another delinquent for me.",
+																																			"response": [
+																																				{
+																																					"text": "[continue]",
+																																					"tree": [
+																																						{
+																																							"text": "They didn't take responsibility for their\n actions like you did by coming here.",
+																																							"response": [
+																																								{
+																																									"text": "[continue]",
+																																									"tree": [
+																																										{
+																																											"text": "So, go ahead. Pick a folder.\n Find them. Convince them. And have them submit themselves to me.",
+																																											"response": [
+																																												{
+																																													"text": "[continue]",
+																																													"tree": [
+																																														{
+																																															"text": "Have them here by 11:30, lunch time.",
+																																															"response": [
+																																																{
+																																																	"text": "[continue]",
+																																																	"effect": {
+																																																		"key": "TALK_TO_HEADMASTER",
+																																																		"value": true
+																																																	}
+																																																}
+																																															]
+																																														}
+																																													]
+																																												}
+																																											]
+																																										}
+																																									]
+																																								}
+																																							]
+																																						}
+																																					]
+																																				}
+																																			]
+																																		}
+																																	]
+																																}
+																															]
+																														}
+																													]
+																												}
+																											]
+																										}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
 								}
 							]
 						}

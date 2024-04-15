@@ -91,8 +91,10 @@ func set_dialogue_tree(dialogue_tree) -> bool:
 	
 	if tree == {}:
 		return false
-		
-	var resposnses = get_dialogue_responses(tree['response'])
+	
+	var resposnses = []
+	if tree.has('response'):
+		resposnses = get_dialogue_responses(tree['response'])
 	state['resposnses'] = resposnses
 	
 	ui_manager.set_person_text(tree['text'])
