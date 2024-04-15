@@ -1,6 +1,29 @@
-[gd_scene format=3 uid="uid://byt8ywcus344n"]
+[gd_scene load_steps=4 format=3 uid="uid://byt8ywcus344n"]
 
-[node name="Science" type="Node2D"]
+[ext_resource type="Texture2D" uid="uid://c2hcea8kcixpc" path="res://mana-tee1.png" id="1_25hl2"]
+[ext_resource type="Script" path="res://Rooms/Credits/Credits.gd" id="1_sngix"]
+[ext_resource type="FontFile" uid="uid://d23wb7pw2nut1" path="res://garbage.ttf" id="3_6h75h"]
+
+[node name="Credits" type="Node2D"]
+script = ExtResource("1_sngix")
 
 [node name="BG" type="Sprite2D" parent="."]
 z_index = -1
+position = Vector2(694, 502)
+scale = Vector2(12, 12)
+texture = ExtResource("1_25hl2")
+offset = Vector2(-8, 0)
+
+[node name="Credits" type="RichTextLabel" parent="."]
+offset_left = 244.0
+offset_top = 1077.0
+offset_right = 375.0
+offset_bottom = 1167.0
+scale = Vector2(7, 7)
+theme_override_fonts/normal_font = ExtResource("3_6h75h")
+text = "        Ponzis
+         Olive
+        Jason
+  McCheeseBob
+       Lihpten
+"

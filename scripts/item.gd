@@ -114,7 +114,7 @@ func _on_mouse_entered():
 
 func _on_mouse_exited():
 	print("Exited")
-	Input.set_custom_mouse_cursor(crosshair)
+	Input.set_custom_mouse_cursor(crosshair,0,Vector2(12*5,12*5))
 
 func _on_game_flags_update():
 	set_visability()
