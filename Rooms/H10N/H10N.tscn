@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://42yc6e4ghuk8"]
+
+[ext_resource type="Texture2D" uid="uid://ccluolgl8ftff" path="res://Rooms/H10S/H10S.png" id="1_uqxs8"]
+
+[node name="H10N" type="Node2D"]
+
+[node name="BG" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(718, 542)
+texture = ExtResource("1_uqxs8")
+flip_h = true

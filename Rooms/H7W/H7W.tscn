@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://dj3c7x3u5l4j6"]
+
+[ext_resource type="Texture2D" uid="uid://q50ro7wl3o2b" path="res://Rooms/H7W/H7W.jpg" id="1_356ra"]
+
+[node name="H7W" type="Node2D"]
+
+[node name="BG" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(725.5, 542)
+scale = Vector2(0.268738, 0.265491)
+texture = ExtResource("1_356ra")
