@@ -113,7 +113,7 @@ script = ExtResource("8_81sub")
 
 [node name="Overlay" type="TextureButton" parent="ui"]
 visible = false
-anchors_preset = -1
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_top = 100.0
