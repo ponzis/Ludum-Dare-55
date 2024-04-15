@@ -48,6 +48,9 @@ visibility_flags = {
 "TALK_TO_HEADMASTER": true
 }
 visible_without_flag = false
+flags_on_completion = {
+"HAS_FILE": true
+}
 
 [node name="BackOutofRoom" type="TextureButton" parent="Background"]
 offset_left = 13.5
@@ -58,6 +61,10 @@ scale = Vector2(0.2, 0.2)
 texture_normal = ExtResource("8_lo3r7")
 script = ExtResource("2_7o15o")
 next_room_id = 3
+visibility_flags = {
+"HAS_FILE": true
+}
+visible_without_flag = false
 flags_on_completion = {
 "SUCCESS": false
 }
