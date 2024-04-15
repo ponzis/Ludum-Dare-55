@@ -3,8 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://csq74epuik7ci" path="res://Rooms/4Math/mathroom.png" id="1_rtnnc"]
 [ext_resource type="Texture2D" uid="uid://cifef12mqi0kw" path="res://BackOutbutton.png" id="2_2awta"]
 [ext_resource type="Script" path="res://scripts/move_action.gd" id="3_s8hty"]
-[ext_resource type="Texture2D" uid="uid://omcs3evwl77g" path="res://Rooms/5SocialStudies/teacher1-export.png" id="4_obgga"]
-[ext_resource type="Script" path="res://scripts/dialog_action.gd" id="5_try7v"]
+[ext_resource type="Texture2D" uid="uid://d4g3bvkcudrir" path="res://Rooms/4Math/art_size1.png" id="4_b3ec8"]
+[ext_resource type="Script" path="res://scripts/pickup_item.gd" id="5_x6cbl"]
 
 [node name="Math" type="Node2D"]
 
@@ -27,10 +27,23 @@ visibility_flags = {
 }
 play_audio = true
 
-[node name="Teacher" type="TextureButton" parent="."]
-offset_left = 51.0
-offset_top = 555.0
-offset_right = 411.0
-offset_bottom = 1105.0
-texture_normal = ExtResource("4_obgga")
-script = ExtResource("5_try7v")
+[node name="Art Supply" type="TextureButton" parent="."]
+offset_left = 359.0
+offset_top = 881.0
+offset_right = 459.0
+offset_bottom = 1001.0
+rotation = -0.235259
+texture_normal = ExtResource("4_b3ec8")
+script = ExtResource("5_x6cbl")
+set_flags_on_pickup = {
+"ART_KIT_PICKUP": true,
+"HAS_ART_KIT": true
+}
+visibility_flags = {
+"AS_ART_KIT": false
+}
+flags_on_completion = {
+"ART_KIT_PICKUP": true
+}
+
+[connection signal="pressed" from="Art Supply" to="Art Supply" method="_on_pressed"]
