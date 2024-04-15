@@ -1,0 +1,122 @@
+[gd_scene load_steps=9 format=3 uid="uid://dfklhqxuyiumr"]
+
+[ext_resource type="Texture2D" uid="uid://c2hcea8kcixpc" path="res://mana-tee1.png" id="1_g8nru"]
+[ext_resource type="Script" path="res://LogoScene.gd" id="1_ss3t4"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_heeng"]
+size = Vector2(1440, 900)
+
+[sub_resource type="Gradient" id="Gradient_umdnl"]
+interpolation_mode = 2
+colors = PackedColorArray(0.299547, 0.299547, 0.299547, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_fa288"]
+gradient = SubResource("Gradient_umdnl")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(0.512821, 1)
+
+[sub_resource type="Animation" id="Animation_k8bee"]
+resource_name = "new_animation"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MeshInstance2D:texture:fill_to")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0.5, 0.51), Vector2(0.512821, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1e-05, 1e-05), Vector2(12, 12)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 1080), Vector2(648, 595)]
+}
+
+[sub_resource type="Animation" id="Animation_ndw10"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MeshInstance2D:texture:fill_to")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.512821, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(12, 12)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 1080)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_balxl"]
+_data = {
+"RESET": SubResource("Animation_ndw10"),
+"new_animation": SubResource("Animation_k8bee")
+}
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_ss3t4")
+metadata/_edit_horizontal_guides_ = [0.0, 1080.0, 540.0]
+metadata/_edit_vertical_guides_ = [1442.0, 720.0]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+position = Vector2(718, 526)
+scale = Vector2(1.00139, 1.40167)
+mesh = SubResource("QuadMesh_heeng")
+texture = SubResource("GradientTexture2D_fa288")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 1080)
+scale = Vector2(12, 12)
+texture = ExtResource("1_g8nru")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_balxl")
+}
