@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://q50ro7wl3o2b"
-path="res://.godot/imported/H7W.jpg-91e035b46f6d5a5c0a4452cf5bce8a66.ctex"
+uid="uid://cd472kis02h7w"
+path="res://.godot/imported/H7W.png-ef6af790eeb8cc67abdc1d722ee8629c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Rooms/H7W/H7W.jpg"
-dest_files=["res://.godot/imported/H7W.jpg-91e035b46f6d5a5c0a4452cf5bce8a66.ctex"]
+source_file="res://Rooms/H7W/H7W.png"
+dest_files=["res://.godot/imported/H7W.png-ef6af790eeb8cc67abdc1d722ee8629c.ctex"]
 
 [params]
 

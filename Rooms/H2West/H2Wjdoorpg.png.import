@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bek5f53cdvxbd"
-path="res://.godot/imported/H2Wjdoorpg.jpg-8e244d1471004b607ec01441226fbb53.ctex"
+uid="uid://cpaarjq2gp4kh"
+path="res://.godot/imported/H2Wjdoorpg.png-c92a055bf0e5c72b7b517b85a84cb17f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Rooms/H2West/H2Wjdoorpg.jpg"
-dest_files=["res://.godot/imported/H2Wjdoorpg.jpg-8e244d1471004b607ec01441226fbb53.ctex"]
+source_file="res://Rooms/H2West/H2Wjdoorpg.png"
+dest_files=["res://.godot/imported/H2Wjdoorpg.png-c92a055bf0e5c72b7b517b85a84cb17f.ctex"]
 
 [params]
 

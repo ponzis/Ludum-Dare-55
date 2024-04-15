@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bewsatrhgbfaj"
-path="res://.godot/imported/H3Wjdoorpg.jpg-178eed9fdc60e75ea7b0a0b6a6794fb1.ctex"
+uid="uid://cej042r2028oa"
+path="res://.godot/imported/H9W.png-fa21dbe316d54706627099e00d1e3d14.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Rooms/H3West/H3Wjdoorpg.jpg"
-dest_files=["res://.godot/imported/H3Wjdoorpg.jpg-178eed9fdc60e75ea7b0a0b6a6794fb1.ctex"]
+source_file="res://Rooms/H9W/H9W.png"
+dest_files=["res://.godot/imported/H9W.png-fa21dbe316d54706627099e00d1e3d14.ctex"]
 
 [params]
 

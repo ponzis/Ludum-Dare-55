@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://crpme31d1k4qw"
-path="res://.godot/imported/H11N.jpg-fe948a4ef7d6208a7a50b29fae58cfe8.ctex"
+uid="uid://c587lgpbbrafo"
+path="res://.godot/imported/clickcursor.svg-4854615d6a37fc5943c5aed7bef0120c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Rooms/H11N/H11N.jpg"
-dest_files=["res://.godot/imported/H11N.jpg-fe948a4ef7d6208a7a50b29fae58cfe8.ctex"]
+source_file="res://clickcursor.svg"
+dest_files=["res://.godot/imported/clickcursor.svg-4854615d6a37fc5943c5aed7bef0120c.ctex"]
 
 [params]
 
@@ -32,3 +32,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false

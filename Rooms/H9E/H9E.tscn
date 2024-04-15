@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://d3yw07bifwlus"]
+[gd_scene load_steps=4 format=3 uid="uid://d3yw07bifwlus"]
 
 [ext_resource type="Texture2D" uid="uid://0a2500co5yov" path="res://Rooms/H9E/H9E.png" id="1_qr6px"]
+[ext_resource type="Texture2D" uid="uid://cifef12mqi0kw" path="res://BackOutbutton.png" id="2_bxiyk"]
+[ext_resource type="Script" path="res://scripts/move_action.gd" id="3_7jbe8"]
 
 [node name="H9E" type="Node2D"]
 
@@ -8,3 +10,21 @@
 z_index = -1
 position = Vector2(720, 540)
 texture = ExtResource("1_qr6px")
+
+[node name="Back" type="TextureButton" parent="."]
+offset_left = 615.0
+offset_top = 865.0
+offset_right = 815.0
+offset_bottom = 1065.0
+texture_normal = ExtResource("2_bxiyk")
+script = ExtResource("3_7jbe8")
+next_room_id = 21
+
+[node name="Forward" type="TextureButton" parent="."]
+offset_left = 647.0
+offset_top = 467.0
+offset_right = 668.0
+offset_bottom = 479.0
+scale = Vector2(6.70126, 13.1038)
+script = ExtResource("3_7jbe8")
+next_room_id = 19
