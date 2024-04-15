@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://oi0o0ixger4i"]
+
+[ext_resource type="Texture2D" uid="uid://bewsatrhgbfaj" path="res://Rooms/H3West/H3Wjdoorpg.jpg" id="1_83tng"]
+
+[node name="H3W" type="Node2D"]
+
+[node name="BG" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(720, 549)
+scale = Vector2(0.349038, 0.351923)
+texture = ExtResource("1_83tng")

@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://dj1sx3p0wqkwb"]
+
+[ext_resource type="Texture2D" uid="uid://c6gj0ndqfu515" path="res://Rooms/H12N/H12N.jpg" id="1_iaef0"]
+
+[node name="H12N" type="Node2D"]
+
+[node name="BG" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(711.5, 527.5)
+scale = Vector2(0.61614, 0.617798)
+texture = ExtResource("1_iaef0")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://ug4plaxep8f1"]
+[gd_scene load_steps=32 format=3 uid="uid://ug4plaxep8f1"]
 
 [ext_resource type="Script" path="res://scripts/gamemanager.gd" id="1_m0qrl"]
 [ext_resource type="Script" path="res://scripts/rooms.gd" id="2_plwn1"]
@@ -11,6 +11,26 @@
 [ext_resource type="Script" path="res://scripts/ui.gd" id="7_ssp2n"]
 [ext_resource type="Script" path="res://scripts/clock.gd" id="8_81sub"]
 [ext_resource type="PackedScene" uid="uid://y73op4q28ody" path="res://Rooms/7EndingScene/EndingScene.tscn" id="8_hcxlo"]
+[ext_resource type="PackedScene" uid="uid://vpfsoawehqtn" path="res://Rooms/H4South/H4S.tscn" id="9_72j2c"]
+[ext_resource type="PackedScene" uid="uid://y71pyq3oy31m" path="res://Rooms/H6North/H6N.tscn" id="10_al8cu"]
+[ext_resource type="PackedScene" uid="uid://cosxhtbku33qj" path="res://Rooms/H1West/H1W.tscn" id="11_haps5"]
+[ext_resource type="PackedScene" uid="uid://dhos4gs3f5yde" path="res://Rooms/H2West/H2W.tscn" id="12_pnhf3"]
+[ext_resource type="PackedScene" uid="uid://oi0o0ixger4i" path="res://Rooms/H3West/H3W.tscn" id="13_txtjc"]
+[ext_resource type="PackedScene" uid="uid://clv24p46g4ckq" path="res://Rooms/H1East/H1E.tscn" id="14_3wjk7"]
+[ext_resource type="PackedScene" uid="uid://cb17kf4cpxkn7" path="res://Rooms/H2East/H2E.tscn" id="15_kxogp"]
+[ext_resource type="PackedScene" uid="uid://dj6wwlxhv1604" path="res://Rooms/H3East/H3E.tscn" id="16_vf70f"]
+[ext_resource type="PackedScene" uid="uid://dj3c7x3u5l4j6" path="res://Rooms/H7W/H7W.tscn" id="17_q6kw8"]
+[ext_resource type="PackedScene" uid="uid://d4cbyrow7plbj" path="res://Rooms/H8W/H8W.tscn" id="18_wo0s3"]
+[ext_resource type="PackedScene" uid="uid://dsofgqsbtt3v1" path="res://Rooms/H9W/H9W.tscn" id="19_yxcc4"]
+[ext_resource type="PackedScene" uid="uid://bfa3mwux8wh0t" path="res://Rooms/H7E/H7E.tscn" id="20_rhk6y"]
+[ext_resource type="PackedScene" uid="uid://mqro3osb6xhf" path="res://Rooms/H8E/H8E.tscn" id="21_egwwj"]
+[ext_resource type="PackedScene" uid="uid://d3yw07bifwlus" path="res://Rooms/H9E/H9E.tscn" id="22_0rt2c"]
+[ext_resource type="PackedScene" uid="uid://42yc6e4ghuk8" path="res://Rooms/H10N/H10N.tscn" id="23_y0wpj"]
+[ext_resource type="PackedScene" uid="uid://b2eph7t3l238q" path="res://Rooms/H10S/H10S.tscn" id="24_71bg4"]
+[ext_resource type="PackedScene" uid="uid://cp37maw2ut6wf" path="res://Rooms/H11N/H11N.tscn" id="25_2rxnp"]
+[ext_resource type="PackedScene" uid="uid://cu7u01wmw8j7i" path="res://Rooms/H11S/H11S.tscn" id="26_mm4o6"]
+[ext_resource type="PackedScene" uid="uid://dj1sx3p0wqkwb" path="res://Rooms/H12N/H12N.tscn" id="27_fug04"]
+[ext_resource type="PackedScene" uid="uid://iry0r81trwui" path="res://Rooms/H12S/H12S.tscn" id="28_asl2q"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_m0qrl")
@@ -19,7 +39,7 @@ metadata/_edit_horizontal_guides_ = [20.0]
 
 [node name="rooms" type="Node" parent="."]
 script = ExtResource("2_plwn1")
-scenes = Array[PackedScene]([ExtResource("3_nvk34"), ExtResource("4_664kq"), ExtResource("5_4c0sb"), ExtResource("6_28uj8"), ExtResource("7_jttov"), ExtResource("8_hcxlo")])
+scenes = Array[PackedScene]([ExtResource("3_nvk34"), ExtResource("4_664kq"), ExtResource("5_4c0sb"), ExtResource("6_28uj8"), ExtResource("7_jttov"), ExtResource("8_hcxlo"), ExtResource("9_72j2c"), ExtResource("10_al8cu"), ExtResource("11_haps5"), ExtResource("12_pnhf3"), ExtResource("13_txtjc"), ExtResource("14_3wjk7"), ExtResource("15_kxogp"), ExtResource("16_vf70f"), ExtResource("17_q6kw8"), ExtResource("18_wo0s3"), ExtResource("19_yxcc4"), ExtResource("20_rhk6y"), ExtResource("21_egwwj"), ExtResource("22_0rt2c"), ExtResource("23_y0wpj"), ExtResource("24_71bg4"), ExtResource("25_2rxnp"), ExtResource("26_mm4o6"), ExtResource("27_fug04"), ExtResource("28_asl2q")])
 
 [node name="ui" type="Node" parent="."]
 script = ExtResource("7_ssp2n")

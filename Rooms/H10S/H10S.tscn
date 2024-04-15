@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://b2eph7t3l238q"]
 
-[ext_resource type="Texture2D" uid="uid://ccluolgl8ftff" path="res://Rooms/H10S/DSC_0697cropped.png" id="1_8bxyp"]
+[ext_resource type="Texture2D" uid="uid://ccluolgl8ftff" path="res://Rooms/H10S/H10S.png" id="1_8bxyp"]
 
 [node name="H10S" type="Node2D"]
 
