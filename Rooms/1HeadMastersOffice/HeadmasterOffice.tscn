@@ -18,7 +18,7 @@ offset_top = 366.0
 offset_right = 927.0
 offset_bottom = 890.0
 script = ExtResource("2_2da6a")
-dialog_file = "res://Rooms/HeadMaster/headmaster.json"
+dialog_file = "res://Rooms/1HeadMastersOffice/headmaster2.json"
 grab = ExtResource("3_c153e")
 
 [node name="Folder" type="TextureButton" parent="."]
@@ -27,3 +27,4 @@ offset_top = 961.0
 offset_right = 879.0
 offset_bottom = 1015.0
 script = ExtResource("4_wk8d3")
+next_room_id = 1

@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://ug4plaxep8f1"]
+[gd_scene load_steps=37 format=3 uid="uid://ug4plaxep8f1"]
 
 [ext_resource type="Script" path="res://scripts/gamemanager.gd" id="1_m0qrl"]
 [ext_resource type="Script" path="res://scripts/rooms.gd" id="2_plwn1"]
@@ -34,6 +34,7 @@
 [ext_resource type="PackedScene" uid="uid://dm3wxvnukvbqr" path="res://Rooms/4Math/Math.tscn" id="29_1tkwf"]
 [ext_resource type="PackedScene" uid="uid://j01hvppvpowa" path="res://Rooms/5SocialStudies/SocialStudies.tscn" id="30_nrloj"]
 [ext_resource type="PackedScene" uid="uid://c44ubdp0f63jn" path="res://Rooms/6Art/Art.tscn" id="31_ml3lu"]
+[ext_resource type="PackedScene" uid="uid://dxfdscm00qxcq" path="res://Rooms/1HeadMastersOffice/HeadmasterOffice.tscn" id="32_v8ivu"]
 [ext_resource type="Script" path="res://scripts/game_end.gd" id="35_2eets"]
 
 [node name="Main" type="Node2D"]
@@ -43,7 +44,7 @@ metadata/_edit_horizontal_guides_ = [20.0]
 
 [node name="rooms" type="Node" parent="."]
 script = ExtResource("2_plwn1")
-scenes = Array[PackedScene]([ExtResource("3_nvk34"), ExtResource("4_664kq"), ExtResource("5_4c0sb"), ExtResource("6_28uj8"), ExtResource("7_jttov"), ExtResource("8_hcxlo"), ExtResource("9_72j2c"), ExtResource("10_al8cu"), ExtResource("11_haps5"), ExtResource("12_pnhf3"), ExtResource("13_txtjc"), ExtResource("14_3wjk7"), ExtResource("15_kxogp"), ExtResource("16_vf70f"), ExtResource("17_q6kw8"), ExtResource("18_wo0s3"), ExtResource("19_yxcc4"), ExtResource("20_rhk6y"), ExtResource("21_egwwj"), ExtResource("22_0rt2c"), ExtResource("23_y0wpj"), ExtResource("24_71bg4"), ExtResource("25_2rxnp"), ExtResource("26_mm4o6"), ExtResource("27_fug04"), ExtResource("28_asl2q"), ExtResource("29_1tkwf"), ExtResource("30_nrloj"), ExtResource("31_ml3lu")])
+scenes = Array[PackedScene]([ExtResource("3_nvk34"), ExtResource("4_664kq"), ExtResource("5_4c0sb"), ExtResource("6_28uj8"), ExtResource("7_jttov"), ExtResource("8_hcxlo"), ExtResource("9_72j2c"), ExtResource("10_al8cu"), ExtResource("11_haps5"), ExtResource("12_pnhf3"), ExtResource("13_txtjc"), ExtResource("14_3wjk7"), ExtResource("15_kxogp"), ExtResource("16_vf70f"), ExtResource("17_q6kw8"), ExtResource("18_wo0s3"), ExtResource("19_yxcc4"), ExtResource("20_rhk6y"), ExtResource("21_egwwj"), ExtResource("22_0rt2c"), ExtResource("23_y0wpj"), ExtResource("24_71bg4"), ExtResource("25_2rxnp"), ExtResource("26_mm4o6"), ExtResource("27_fug04"), ExtResource("28_asl2q"), ExtResource("29_1tkwf"), ExtResource("30_nrloj"), ExtResource("31_ml3lu"), ExtResource("32_v8ivu")])
 
 [node name="ui" type="Node" parent="."]
 script = ExtResource("7_ssp2n")
@@ -153,7 +154,7 @@ horizontal_alignment = 1
 
 [node name="GameEnd" type="Node" parent="."]
 script = ExtResource("35_2eets")
-next_room_id = 3
+next_room_id = 6
 
 [connection signal="button_up" from="ui/Dialogue/Grid/Option_1" to="ui" method="_on_option_1_button_up"]
 [connection signal="pressed" from="ui/Dialogue/Grid/Option_2" to="ui" method="_on_option_2_pressed"]
