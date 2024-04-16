@@ -19,4 +19,7 @@ func _on_game_flags_update():
 		room_manager.set_next_scene(next_room_id, Vector2(0, 0))
 		
 	
-	
+func _unhandled_input(event):
+	if event is InputEventKey:
+		if event.pressed and event.keycode == KEY_ESCAPE:
+			get_tree().quit()
