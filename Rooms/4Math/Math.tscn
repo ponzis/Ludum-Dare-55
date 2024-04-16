@@ -40,7 +40,7 @@ set_flags_on_pickup = {
 "HAS_ART_KIT": true
 }
 visibility_flags = {
-"AS_ART_KIT": false
+"HAS_ART_KIT": false
 }
 flags_on_completion = {
 "ART_KIT_PICKUP": true
