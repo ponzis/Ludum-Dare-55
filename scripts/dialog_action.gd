@@ -21,6 +21,7 @@ func _on_dialogue_clicked(option):
 	if selected_response.has('effect'):
 		var effect = selected_response['effect']
 		set_effect(effect)
+		game_manager.trigger_game_flags_update()
 
 	if !selected_response.has('tree'):
 		ui_manager.hide_dialoge()
@@ -44,7 +45,6 @@ func set_effect(effect):
 		
 	if effect.has('time_cost'):	
 		game_manager.time_elapsed(effect['time_cost'])
-		
 	print(game_manager.game_flags)
 
 func get_dialogue() -> Dictionary:
