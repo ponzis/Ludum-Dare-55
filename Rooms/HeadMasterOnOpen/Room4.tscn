@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://bwt04pbe02yvc"]
 
-[ext_resource type="Texture2D" uid="uid://c5vsf2lv7fbu5" path="res://Rooms/HeadMasterOnOpen/test2.png" id="1_ikq6l"]
+[ext_resource type="Texture2D" uid="uid://jcg6yon7tg3b" path="res://Rooms/HeadMasterOnOpen/test2-fix.png" id="1_ramp0"]
 [ext_resource type="Script" path="res://scripts/move_action.gd" id="2_7o15o"]
 [ext_resource type="Texture2D" uid="uid://8mvjydx67dm2" path="res://SpeakCursor.svg" id="3_ijmvr"]
 [ext_resource type="Script" path="res://scripts/dialog_action.gd" id="3_mukdi"]
@@ -13,32 +13,34 @@ position = Vector2(681, 514)
 scale = Vector2(6, 6)
 
 [node name="Background" type="Sprite2D" parent="."]
-texture = ExtResource("1_ikq6l")
+position = Vector2(6, 4)
+scale = Vector2(0.166, 0.166)
+texture = ExtResource("1_ramp0")
 
-[node name="Headmaster" type="TextureButton" parent="Background"]
-offset_left = -2.0
-offset_top = -40.0
-offset_right = 62.0
-offset_bottom = 32.0
+[node name="Headmaster" type="TextureButton" parent="."]
+offset_left = -1.33333
+offset_top = -34.6667
+offset_right = 62.6667
+offset_bottom = 37.3333
 scale = Vector2(0.997732, 0.986871)
 script = ExtResource("3_mukdi")
 dialog_file = "res://Rooms/HeadMasterOnOpen/headmaster.json"
 grab = ExtResource("3_ijmvr")
 
-[node name="PencilHolder" type="TextureButton" parent="Background"]
-offset_left = 4.66666
-offset_top = 28.8333
-offset_right = 44.6667
-offset_bottom = 68.8333
+[node name="PencilHolder" type="TextureButton" parent="."]
+offset_left = 4.0
+offset_top = 34.5
+offset_right = 44.0
+offset_bottom = 74.5
 scale = Vector2(0.374598, 0.507877)
 script = ExtResource("4_4isak")
 description = "This is a pencil holder"
 
-[node name="Folder" type="TextureButton" parent="Background"]
-offset_left = -87.0
-offset_top = 49.0
-offset_right = 17.0
-offset_bottom = 144.0
+[node name="Folder" type="TextureButton" parent="."]
+offset_left = -90.3333
+offset_top = 55.1667
+offset_right = 13.6667
+offset_bottom = 150.167
 scale = Vector2(0.695015, 0.285648)
 script = ExtResource("4_4isak")
 description = "The file"
@@ -51,7 +53,7 @@ flags_on_completion = {
 "HAS_FILE": true
 }
 
-[node name="BackOutofRoom" type="TextureButton" parent="Background"]
+[node name="BackOutofRoom" type="TextureButton" parent="."]
 offset_left = 13.3333
 offset_top = 67.0
 offset_right = 213.333
@@ -70,7 +72,7 @@ flags_on_completion = {
 }
 play_audio = true
 
-[connection signal="mouse_entered" from="Background/Headmaster" to="Background/Headmaster" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Background/Headmaster" to="Background/Headmaster" method="_on_mouse_exited"]
-[connection signal="pressed" from="Background/Headmaster" to="Background/Headmaster" method="_on_pressed"]
-[connection signal="pressed" from="Background/Folder" to="Background/Folder" method="_on_pressed"]
+[connection signal="mouse_entered" from="Headmaster" to="Headmaster" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Headmaster" to="Headmaster" method="_on_mouse_exited"]
+[connection signal="pressed" from="Headmaster" to="Headmaster" method="_on_pressed"]
+[connection signal="pressed" from="Folder" to="Folder" method="_on_pressed"]
